@@ -21,6 +21,7 @@ sysinfo.txt
 /*.csproj
 /*.pidb
 *.pidb.meta
+*.meta
 /*.suo
 /*.sln*
 /*.user

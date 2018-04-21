@@ -4,11 +4,11 @@ using UnityEngine;
 
 // script à accrocher au joueur.
 
-
+[RequireComponent(typeof (Player))]
 public class GestionManette : MonoBehaviour {
 
-	// le numero du joueur
-	public int playerNumber;
+	// le numero du joueur, détermine quelle manette est attribuée à ce joueur (1 ou 2)
+	[HideInInspector] public int playerNumber;
 
 	[SerializeField] private bool debug = false;
 
