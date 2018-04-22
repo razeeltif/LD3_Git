@@ -69,7 +69,6 @@ public class GestionManette : MonoBehaviour {
 		if(Input.GetButtonDown("JoyLeftStick" + playerNumber))
 			Debug.Log("JoyLeftStick" + playerNumber);
 
-
 		Vector2 vec1 = getLeftJoystickDirection();
 		if(vec1.x != 0 || vec1.y != 0)
 			Debug.Log("joystick"  + playerNumber + " gauche : " + vec1.x + ", " + vec1.y);
@@ -84,8 +83,6 @@ public class GestionManette : MonoBehaviour {
 		if(getRightTrigger() !=0)
 			Debug.Log("JoyRT" + playerNumber + " : " + getRightTrigger());
 		
-
-
 	}
 
 	/// <summary>
