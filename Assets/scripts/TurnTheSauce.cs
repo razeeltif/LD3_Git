@@ -15,6 +15,8 @@ public class TurnTheSauce : MonoBehaviour {
     public string inputToEnter4;
     //Ordre dans lequel il faut tourner la sauce
     public string order;
+    //Les Objets qui apparaissent dans ce minijeu
+    //A completer
 
     //Le nombre de fois qu'on a rentré l'input
     private int inputEntered;
@@ -63,7 +65,7 @@ public class TurnTheSauce : MonoBehaviour {
                 //il faudra surement changer cela
                 message.text = "Yeah";
                 //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
-                gameObject.SetActive(false);
+                enabled = false;
             }
         }
     }

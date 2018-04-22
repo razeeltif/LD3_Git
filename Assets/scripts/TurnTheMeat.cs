@@ -14,6 +14,10 @@ public class TurnTheMeat : MonoBehaviour {
     public string inputToEnter1;
     //Le nom du 2e input à presser
     public string inputToEnter2;
+    //Les Objets qui apparaitront dans le jeu
+    public GameObject RawMeat;
+    public GameObject CookedMeat;
+
 
     //Le nombre de combinaison d'input qu'on a rentré
     private int inputEnter;
@@ -23,6 +27,8 @@ public class TurnTheMeat : MonoBehaviour {
     private bool input2Entered;
 
     void OnEnable () {
+        RawMeat.SetActive(true);
+        CookedMeat.SetActive(false);
         message.text = "";
         inputEnter = 0;
         input1Entered = false;
@@ -35,12 +41,14 @@ public class TurnTheMeat : MonoBehaviour {
         if (Input.GetKeyDown(inputToEnter1) && !input2Entered)
         {
             input1Entered = true;
+            //Là, faut mettre le son de retournement de steak
         }
 
         //Si on presse "inputToEnter2" et que "inputToEnter1" n'est pas déjà pressé, on passe "input1Entered" à true
         if (Input.GetKeyDown(inputToEnter2) && !input1Entered)
         {
             input2Entered = true;
+            //Là, faut mettre le son de retournement de steak
         }
 
         //Si on presse "inputToEnter1" et que "inputToEnter2" à déjà été pressé, on incrémente "inputEnter" de 1
@@ -55,8 +63,10 @@ public class TurnTheMeat : MonoBehaviour {
             {
                 //il faudra surement changer cela
                 message.text = "Félicitation";
+                RawMeat.SetActive(false);
+                CookedMeat.SetActive(true);
                 //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
-                gameObject.SetActive(false);
+                enabled = false;
             }
         }
     }

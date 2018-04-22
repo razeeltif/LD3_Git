@@ -12,12 +12,26 @@ public class PrepareVegetables : MonoBehaviour {
     public int nbPressInput;
     //Le nom de l'input à presser pour ce minijeu (il est censé changer par je sais pas quelle magie)
     public string inputToEnter;
+    //Les GameObjects a faire apparaitre et disparaitre
+   /* public GameObject TomatoUnCut;
+    public GameObject TomatoHalfCut;
+    public GameObject TomatoCut;
+    public GameObject CarrotUnCut;
+    public GameObject CarrotHalfCut;
+    public GameObject CarrotCut;*/
+    public GameObject VegetableUnCut;
+    public GameObject VegetableHalfCut;
+    public GameObject VegetableCut;
+
 
     //Le nombre de fois qu'on a rentré l'input
     private int inputEntered;
 
     void OnEnable()
     {
+        VegetableUnCut.SetActive(true);
+        VegetableHalfCut.SetActive(false);
+        VegetableCut.SetActive(false);
         inputEntered = 0;
         message.text = "";
     }
@@ -30,12 +44,20 @@ public class PrepareVegetables : MonoBehaviour {
         if (Input.GetKeyDown(inputToEnter))
         {
             inputEntered ++;
+            //A la moitié du jeu, on met le légume à moitié coupé
+            if (inputEntered == (nbPressInput / 2))
+            {
+                VegetableUnCut.SetActive(false);
+                VegetableHalfCut.SetActive(true);
+            }
             if (inputEntered == nbPressInput)
             {
                 //Faut faire autre chose que le message
                 message.text = "Yeah";
+                VegetableHalfCut.SetActive(false);
+                VegetableCut.SetActive(true);
                 //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
-                gameObject.SetActive(false);
+                enabled = false;
             }
         }
 	}
