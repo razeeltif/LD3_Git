@@ -24,7 +24,7 @@ public class TurnTheSauce : MonoBehaviour {
     private bool input3Entered;
     private bool input4Entered;
 
-    void Start () {
+    void OnEnable () {
         message.text = "";
         inputEntered = 0;
         input1Entered = false;
@@ -62,6 +62,8 @@ public class TurnTheSauce : MonoBehaviour {
             {
                 //il faudra surement changer cela
                 message.text = "Yeah";
+                //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
+                gameObject.SetActive(false);
             }
         }
     }

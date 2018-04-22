@@ -22,7 +22,7 @@ public class TurnTheMeat : MonoBehaviour {
     //Indique si on a pressé ou non "inputEnter2"
     private bool input2Entered;
 
-    void Start () {
+    void OnEnable () {
         message.text = "";
         inputEnter = 0;
         input1Entered = false;
@@ -55,6 +55,8 @@ public class TurnTheMeat : MonoBehaviour {
             {
                 //il faudra surement changer cela
                 message.text = "Félicitation";
+                //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
+                gameObject.SetActive(false);
             }
         }
     }

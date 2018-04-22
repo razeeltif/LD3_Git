@@ -16,10 +16,11 @@ public class PrepareVegetables : MonoBehaviour {
     //Le nombre de fois qu'on a rentré l'input
     private int inputEntered;
 
-    void Start () {
+    void OnEnable()
+    {
         inputEntered = 0;
         message.text = "";
-	}
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -33,6 +34,8 @@ public class PrepareVegetables : MonoBehaviour {
             {
                 //Faut faire autre chose que le message
                 message.text = "Yeah";
+                //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
+                gameObject.SetActive(false);
             }
         }
 	}

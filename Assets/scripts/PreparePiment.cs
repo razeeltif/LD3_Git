@@ -16,7 +16,7 @@ public class PreparePiment : MonoBehaviour {
     //Le nombre d'input qu'on a rentré
     private int inputEnter;
 
-    void Start () {
+    void OnEnable () {
         message.text = "";
         inputEnter = 0;
 	}
@@ -32,6 +32,8 @@ public class PreparePiment : MonoBehaviour {
             {
                 //Il faut surement changer cette partie de code
                 message.text = "Bravo";
+                //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
+                gameObject.SetActive(false);
             }
         }
 	}
