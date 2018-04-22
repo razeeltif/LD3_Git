@@ -39,6 +39,18 @@ ModelImporter:
     100062: Sphere.007
     100064: Sphere.008
     100066: Sphere.009
+    100068: Cube.023
+    100070: Cube.024
+    100072: Cube.025
+    100074: Cube.026
+    100076: Cube.027
+    100078: Cube.028
+    100080: Cube.029
+    100082: Cube.030
+    100084: Cylinder
+    100086: Cylinder.001
+    100088: Cylinder.002
+    100090: Cylinder.003
     400000: Cube
     400002: Cube.001
     400004: Cube.002
@@ -73,6 +85,18 @@ ModelImporter:
     400062: Sphere.007
     400064: Sphere.008
     400066: Sphere.009
+    400068: Cube.023
+    400070: Cube.024
+    400072: Cube.025
+    400074: Cube.026
+    400076: Cube.027
+    400078: Cube.028
+    400080: Cube.029
+    400082: Cube.030
+    400084: Cylinder
+    400086: Cylinder.001
+    400088: Cylinder.002
+    400090: Cylinder.003
     2100000: No Name
     2100002: LeonardoBleuVeste
     2100004: LeonardoChaire
@@ -83,6 +107,9 @@ ModelImporter:
     2100014: GustavoRougeVeste
     2100016: GustavoChaire
     2100018: GustavoBrunPoils
+    2100020: Material.004
+    2100022: Material.003
+    2100024: Material.005
     2300000: Cube
     2300002: Cube.001
     2300004: Cube.002
@@ -116,6 +143,18 @@ ModelImporter:
     2300060: Sphere.007
     2300062: Sphere.008
     2300064: Sphere.009
+    2300066: Cube.023
+    2300068: Cube.024
+    2300070: Cube.025
+    2300072: Cube.026
+    2300074: Cube.027
+    2300076: Cube.028
+    2300078: Cube.029
+    2300080: Cube.030
+    2300082: Cylinder
+    2300084: Cylinder.001
+    2300086: Cylinder.002
+    2300088: Cylinder.003
     3300000: Cube
     3300002: Cube.001
     3300004: Cube.002
@@ -149,6 +188,18 @@ ModelImporter:
     3300060: Sphere.007
     3300062: Sphere.008
     3300064: Sphere.009
+    3300066: Cube.023
+    3300068: Cube.024
+    3300070: Cube.025
+    3300072: Cube.026
+    3300074: Cube.027
+    3300076: Cube.028
+    3300078: Cube.029
+    3300080: Cube.030
+    3300082: Cylinder
+    3300084: Cylinder.001
+    3300086: Cylinder.002
+    3300088: Cylinder.003
     4300000: Cube.011
     4300002: Cube.010
     4300004: Cube.014
@@ -182,6 +233,84 @@ ModelImporter:
     4300060: Cube.002
     4300062: Sphere.003
     4300064: Cube.004
+    4300066: Cube.027
+    4300068: Cube.028
+    4300070: Cylinder.002
+    4300072: Cube.029
+    4300074: Cube.030
+    4300076: Cylinder.003
+    4300078: Cube.025
+    4300080: Cylinder.001
+    4300082: Cube.026
+    4300084: Cube.024
+    4300086: Cube.023
+    4300088: Cylinder
+    7400000: Cube.022|Cube.005Action
+    7400002: Cube.022|Cube.012Action
+    7400004: Cube.022|Cube.016Action
+    7400006: Cube.022|Cube.017Action
+    7400008: Cube.022|Cube.019Action
+    7400010: Cube.022|Cube.022Action
+    7400012: Cube.022|CubeAction
+    7400014: Cube.022|SphereAction
+    7400016: Cube.019|Cube.005Action
+    7400018: Cube.019|Cube.012Action
+    7400020: Cube.019|Cube.016Action
+    7400022: Cube.019|Cube.017Action
+    7400024: Cube.019|Cube.019Action
+    7400026: Cube.019|Cube.022Action
+    7400028: Cube.019|CubeAction
+    7400030: Cube.019|SphereAction
+    7400032: Cube|Cube.005Action
+    7400034: Cube|Cube.012Action
+    7400036: Cube|Cube.016Action
+    7400038: Cube|Cube.017Action
+    7400040: Cube|Cube.019Action
+    7400042: Cube|Cube.022Action
+    7400044: Cube|CubeAction
+    7400046: Cube|SphereAction
+    7400048: Cube.016|Cube.005Action
+    7400050: Cube.016|Cube.012Action
+    7400052: Cube.016|Cube.016Action
+    7400054: Cube.016|Cube.017Action
+    7400056: Cube.016|Cube.019Action
+    7400058: Cube.016|Cube.022Action
+    7400060: Cube.016|CubeAction
+    7400062: Cube.016|SphereAction
+    7400064: Cube.017|Cube.005Action
+    7400066: Cube.017|Cube.012Action
+    7400068: Cube.017|Cube.016Action
+    7400070: Cube.017|Cube.017Action
+    7400072: Cube.017|Cube.019Action
+    7400074: Cube.017|Cube.022Action
+    7400076: Cube.017|CubeAction
+    7400078: Cube.017|SphereAction
+    7400080: Cube.012|Cube.005Action
+    7400082: Cube.012|Cube.012Action
+    7400084: Cube.012|Cube.016Action
+    7400086: Cube.012|Cube.017Action
+    7400088: Cube.012|Cube.019Action
+    7400090: Cube.012|Cube.022Action
+    7400092: Cube.012|CubeAction
+    7400094: Cube.012|SphereAction
+    7400096: Cube.005|Cube.005Action
+    7400098: Cube.005|Cube.012Action
+    7400100: Cube.005|Cube.016Action
+    7400102: Cube.005|Cube.017Action
+    7400104: Cube.005|Cube.019Action
+    7400106: Cube.005|Cube.022Action
+    7400108: Cube.005|CubeAction
+    7400110: Cube.005|SphereAction
+    7400112: Sphere|Cube.005Action
+    7400114: Sphere|Cube.012Action
+    7400116: Sphere|Cube.016Action
+    7400118: Sphere|Cube.017Action
+    7400120: Sphere|Cube.019Action
+    7400122: Sphere|Cube.022Action
+    7400124: Sphere|CubeAction
+    7400126: Sphere|SphereAction
+    9500000: //RootNode
+    11100000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -201,7 +330,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -253,7 +382,7 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
