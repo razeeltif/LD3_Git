@@ -92,7 +92,7 @@ public class GestionManette : MonoBehaviour {
 	/// récupérer la direction du joystick gauche
 	/// </summary>
 	/// <returns></returns>
-	Vector2 getLeftJoystickDirection(){
+	public Vector2 getLeftJoystickDirection(){
 		return new Vector2 (Input.GetAxis ("JoyLeftJoyX" + playerNumber), Input.GetAxis ("JoyLeftJoyY" + playerNumber));
 	}
 
@@ -100,7 +100,7 @@ public class GestionManette : MonoBehaviour {
 	/// récupérer la direction du joystick droit
 	/// </summary>
 	/// <returns></returns>
-	Vector2 getRightJoystickDirection(){
+	public Vector2 getRightJoystickDirection(){
 		return new Vector2 (Input.GetAxis ("JoyRightJoyX" + playerNumber), Input.GetAxis ("JoyRightJoyY" + playerNumber));
 	}
 
@@ -108,7 +108,7 @@ public class GestionManette : MonoBehaviour {
 	/// récupérer la puissance mise dans le trigger gauche
 	/// </summary>
 	/// <returns> float entre 0 (au repos) et 1 (enfoncé au max) </returns>
-	float getLeftTrigger(){
+	public float getLeftTrigger(){
 		return Input.GetAxis ("JoyLT" + playerNumber);
 	}
 
@@ -116,7 +116,7 @@ public class GestionManette : MonoBehaviour {
 	/// récupérer la puissance mise dans le trigger droit 
 	/// </summary>
 	/// <returns> float entre 0 (au repos) et 1 (enfoncé au max) </returns>
-	float getRightTrigger(){
+	public float getRightTrigger(){
 		return Input.GetAxis ("JoyRT" + playerNumber);
 	}
 }

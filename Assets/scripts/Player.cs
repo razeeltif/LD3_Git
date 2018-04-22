@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
 
 	public int pv;
 
-	private GestionManette manette;
+	public GestionManette manette;
 
 	void Awake()
 	{
