@@ -21,10 +21,12 @@ public class Player : MonoBehaviour {
     Timer timerDelayAttacking;
     // temps de delais de l'attaque
     public float delayAttacking;
+    PlayMusic playMusic;
 
 	void Awake()
 	{
 		manette = GetComponent<GestionManette>();
+        playMusic = GameManager.FindObjectOfType<PlayMusic>();
 	}
 
 	// Use this for initialization
@@ -63,8 +65,21 @@ public class Player : MonoBehaviour {
 			return;
 		}else{
 			pv -= damage;
-			if(pv <= 0){
+            if (pv <= (50*0.75)) {
+                playMusic.PlaySelectedMusic(2);
+                return;
+            }
+            else if (pv <= (50 * 0.5)) {
+                playMusic.PlaySelectedMusic(3);
+                return;
+            }
+            else if (pv <= (50 * 0.25)) {
+                playMusic.PlaySelectedMusic(4);
+                return;
+            }
+            else if(pv <= 0){
 				GameManager.getInstance().Death(this);
+                return;
 			}
 		}
 	}
