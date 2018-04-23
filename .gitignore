@@ -50,3 +50,5 @@ ProjectSettings/ProjectVersion\.txt
 WebGL/
 
 Windows/
+
+\.vscode/launch\.json
