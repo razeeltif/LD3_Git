@@ -1,137 +1,108 @@
 fileFormatVersion: 2
-guid: a2062e2b5a07e0c459a691b93f9213ec
-timeCreated: 1524502278
+guid: e247f17f7a073074cbb662e130f92b60
+timeCreated: 1524506183
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Armature
-    100002: Armature.001
-    100004: AvantBrasL
-    100006: AvantBrasL 1
-    100008: AvantBrasR
-    100010: AvantBrasR 1
-    100012: BrasL
-    100014: BrasL 1
-    100016: BrasR
-    100018: BrasR 1
-    100020: Chapeau
-    100022: Chapeau 1
-    100024: Chapeau_end
-    100026: Chapeau_end 1
-    100028: Cou
-    100030: Cou 1
-    100032: Dos
-    100034: Dos 1
-    100036: EpauleL
-    100038: EpauleL 1
-    100040: EpauleL_end
-    100042: EpauleL_end 1
-    100044: EpauleR
-    100046: EpauleR 1
-    100048: EpauleR_end
-    100050: EpauleR_end 1
-    100052: Gus
-    100054: Leo
-    100056: //RootNode
-    100058: MainL
-    100060: MainL 1
-    100062: MainL_end
-    100064: MainL_end 1
-    100066: MainR
-    100068: MainR 1
-    100070: MainR_end
-    100072: MainR_end 1
-    100074: Root
-    100076: Root 1
-    100078: Tete
-    100080: Tete 1
-    100082: YeuxL
-    100084: YeuxL 1
-    100086: YeuxL_end
-    100088: YeuxL_end 1
-    100090: YeuxR
-    100092: YeuxR 1
-    100094: YeuxR_end
-    100096: YeuxR_end 1
-    400000: Armature
-    400002: Armature.001
-    400004: AvantBrasL
-    400006: AvantBrasL 1
-    400008: AvantBrasR
-    400010: AvantBrasR 1
-    400012: BrasL
-    400014: BrasL 1
-    400016: BrasR
-    400018: BrasR 1
-    400020: Chapeau
-    400022: Chapeau 1
-    400024: Chapeau_end
-    400026: Chapeau_end 1
-    400028: Cou
-    400030: Cou 1
-    400032: Dos
-    400034: Dos 1
-    400036: EpauleL
-    400038: EpauleL 1
-    400040: EpauleL_end
-    400042: EpauleL_end 1
-    400044: EpauleR
-    400046: EpauleR 1
-    400048: EpauleR_end
-    400050: EpauleR_end 1
-    400052: Gus
-    400054: Leo
-    400056: //RootNode
-    400058: MainL
-    400060: MainL 1
-    400062: MainL_end
-    400064: MainL_end 1
-    400066: MainR
-    400068: MainR 1
-    400070: MainR_end
-    400072: MainR_end 1
-    400074: Root
-    400076: Root 1
-    400078: Tete
-    400080: Tete 1
-    400082: YeuxL
-    400084: YeuxL 1
-    400086: YeuxL_end
-    400088: YeuxL_end 1
-    400090: YeuxR
-    400092: YeuxR 1
-    400094: YeuxR_end
-    400096: YeuxR_end 1
+    100000: Armature.001
+    100002: AvantBrasL
+    100004: AvantBrasR
+    100006: BrasL
+    100008: BrasR
+    100010: Chapeau
+    100012: Chapeau_end
+    100014: Cou
+    100016: Dos
+    100018: EpauleL
+    100020: EpauleL_end
+    100022: EpauleR
+    100024: EpauleR_end
+    100026: //RootNode
+    100028: Gus
+    100030: MainL
+    100032: MainL_end
+    100034: MainR
+    100036: MainR_end
+    100038: Root
+    100040: Tete
+    100042: YeuxL
+    100044: YeuxL_end
+    100046: YeuxR
+    100048: YeuxR_end
+    400000: Armature.001
+    400002: AvantBrasL
+    400004: AvantBrasR
+    400006: BrasL
+    400008: BrasR
+    400010: Chapeau
+    400012: Chapeau_end
+    400014: Cou
+    400016: Dos
+    400018: EpauleL
+    400020: EpauleL_end
+    400022: EpauleR
+    400024: EpauleR_end
+    400026: Gus
+    400028: //RootNode
+    400030: MainL
+    400032: MainL_end
+    400034: MainR
+    400036: MainR_end
+    400038: Root
+    400040: Tete
+    400042: YeuxL
+    400044: YeuxL_end
+    400046: YeuxR
+    400048: YeuxR_end
     2100000: GustavoChaire
     2100002: GustavoRougeVeste
     2100004: Gus_LeoGrisBoutons
     2100006: GustavoNoirYeux_Bouche
     2100008: GustavoBrunPoils
     2100010: Gus_LeoToque
-    2100012: LeonardoChaire
-    2100014: LeonardoBleuVeste
-    2100016: LeonardoBlondPoils
     4300000: Gus
-    4300002: Leo
-    7400000: Armature.001|Action_BoireSoupe
-    7400002: Armature.001|Action_Coupe
-    7400004: Armature.001|Action_CuireViande
-    7400006: Armature.001|Action_LancerAssiette
-    7400008: Armature.001|Action_LancerTomate
-    7400010: Armature.001|Action_RemuerSauce
-    7400012: Armature.001|Action_RemuerSauce.001
-    7400014: Armature|Action_BoireSoupe
-    7400016: Armature|Action_Coupe
-    7400018: Armature|Action_CuireViande
-    7400020: Armature|Action_LancerAssiette
-    7400022: Armature|Action_LancerTomate
-    7400024: Armature|Action_RemuerSauce
-    7400026: Armature|Action_RemuerSauce.001
+    7400000: Gus|Action_BoireSoupe
+    7400002: Gus|Action_Coupe
+    7400004: Gus|Action_CuireViande
+    7400006: Gus|Action_EpepinerPiment
+    7400008: Gus|Action_LancerAssiette
+    7400010: Gus|Action_LancerTomate
+    7400012: Gus|Action_RemuerSauce
+    7400014: Gus|Action_Etourdi
     9500000: //RootNode
     13700000: Gus
-    13700002: Leo
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gus_LeoGrisBoutons
+    second: {fileID: 2100000, guid: d5b1e27baf711c0429dc5d16a70671b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gus_LeoToque
+    second: {fileID: 2100000, guid: 5246a73e578931e4fb407814b496218a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GustavoBrunPoils
+    second: {fileID: 2100000, guid: 6d4deb97ea0f3d64c94c064e2b213ae8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GustavoChaire
+    second: {fileID: 2100000, guid: 4fd16b4c57827be49880cdde00adf4c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GustavoNoirYeux_Bouche
+    second: {fileID: 2100000, guid: 113e14d81696a004dae45f870c0de77d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GustavoRougeVeste
+    second: {fileID: 2100000, guid: f060cb6bab229e346be221b8affb7bed, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -159,7 +130,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature.001|Action_BoireSoupe
+      name: Gus|Action_BoireSoupe
       takeName: Armature.001|Action_BoireSoupe
       firstFrame: 0
       lastFrame: 65
@@ -187,9 +158,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature.001|Action_Coupe
+      name: Gus|Action_Coupe
       takeName: Armature.001|Action_Coupe
-      firstFrame: 4
+      firstFrame: 0
       lastFrame: 48
       wrapMode: 0
       orientationOffsetY: 0
@@ -215,9 +186,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature.001|Action_CuireViande
+      name: Gus|Action_CuireViande
       takeName: Armature.001|Action_CuireViande
-      firstFrame: 5
+      firstFrame: 0
       lastFrame: 151
       wrapMode: 0
       orientationOffsetY: 0
@@ -243,7 +214,35 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature.001|Action_LancerAssiette
+      name: Gus|Action_EpepinerPiment
+      takeName: Armature.001|Action_EpepinerPiment
+      firstFrame: 0
+      lastFrame: 121
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Gus|Action_LancerAssiette
       takeName: Armature.001|Action_LancerAssiette
       firstFrame: 0
       lastFrame: 54
@@ -271,7 +270,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature.001|Action_LancerTomate
+      name: Gus|Action_LancerTomate
       takeName: Armature.001|Action_LancerTomate
       firstFrame: 0
       lastFrame: 58
@@ -299,7 +298,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature.001|Action_RemuerSauce
+      name: Gus|Action_RemuerSauce
       takeName: Armature.001|Action_RemuerSauce
       firstFrame: 0
       lastFrame: 149
@@ -327,10 +326,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Action_BoireSoupe
-      takeName: Armature|Action_BoireSoupe
+      name: Gus|Action_Etourdi
+      takeName: Armature.001|Action_Etourdi
       firstFrame: 0
-      lastFrame: 65
+      lastFrame: 154
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -338,146 +337,6 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Action_Coupe
-      takeName: Armature|Action_Coupe
-      firstFrame: 4
-      lastFrame: 48
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Action_CuireViande
-      takeName: Armature|Action_CuireViande
-      firstFrame: 5
-      lastFrame: 151
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Action_LancerAssiette
-      takeName: Armature|Action_LancerAssiette
-      firstFrame: 0
-      lastFrame: 54
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Action_LancerTomate
-      takeName: Armature|Action_LancerTomate
-      firstFrame: 0
-      lastFrame: 58
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Action_RemuerSauce
-      takeName: Armature|Action_RemuerSauce
-      firstFrame: 0
-      lastFrame: 149
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
