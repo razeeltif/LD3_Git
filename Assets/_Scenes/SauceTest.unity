@@ -1452,6 +1452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: {fileID: 2102075443}
+  image: {fileID: 62301467}
   nbPressInput: 10
   inputToEnter: JoyA1
   VegetableUnCut: {fileID: 95343099}
@@ -1469,6 +1470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: {fileID: 2102075443}
+  image: {fileID: 62301467}
   nbInput: 5
   inputToEnter1: JoyRB1
   inputToEnter2: JoyLB1
@@ -1509,6 +1511,9 @@ MonoBehaviour:
   inputLauncherVegetables: JoyB1
   inputLauncherPiment: JoyX1
   inputLauncherSauce: JoyY1
+  actualRecipe: []
+  _isRecipeEnd: 0
+  _numFinishedRecipe: -1
 --- !u!114 &1228578142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1638,6 +1643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: {fileID: 2142305007}
+  image: {fileID: 1685927616}
   nbPressInput: 10
   inputToEnter: JoyA2
   VegetableUnCut: {fileID: 824864435}
@@ -1655,6 +1661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: {fileID: 2142305007}
+  image: {fileID: 1685927616}
   nbInput: 5
   inputToEnter1: JoyRB2
   inputToEnter2: JoyLB2
@@ -1695,6 +1702,9 @@ MonoBehaviour:
   inputLauncherVegetables: JoyB2
   inputLauncherPiment: JoyX2
   inputLauncherSauce: JoyY2
+  actualRecipe: []
+  _isRecipeEnd: 0
+  _numFinishedRecipe: -1
 --- !u!114 &1350524248
 MonoBehaviour:
   m_ObjectHideFlags: 0

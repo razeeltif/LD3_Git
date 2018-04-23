@@ -11,6 +11,7 @@ public class TurnTheMeat : MonoBehaviour {
 
     //Message de victoire du minijeu (à retirer ?)
     public Text message;
+    public Image image;
     //Nombre de fois qu'on doit presser la combinaison l'input
     public int nbInput;
     //Le nom du 1er input à presser
