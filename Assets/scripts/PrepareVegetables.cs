@@ -5,13 +5,12 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Player))]
-
-
 public class PrepareVegetables : MonoBehaviour {
 
     Player player;
     //Message de victoire du minijeu (à retirer ?)
     public Text message;
+    public Image image;
     //Nombre de fois qu'on doit presser l'input
     public int nbPressInput;
     //Le nom de l'input à presser pour ce minijeu (il est censé changer par je sais pas quelle magie)
