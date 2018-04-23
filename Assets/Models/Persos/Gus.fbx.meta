@@ -188,7 +188,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Gus|Action_CuireViande
       takeName: Armature.001|Action_CuireViande
-      firstFrame: 0
+      firstFrame: 5
       lastFrame: 151
       wrapMode: 0
       orientationOffsetY: 0
@@ -216,8 +216,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Gus|Action_EpepinerPiment
       takeName: Armature.001|Action_EpepinerPiment
-      firstFrame: 0
-      lastFrame: 121
+      firstFrame: 10
+      lastFrame: 120
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

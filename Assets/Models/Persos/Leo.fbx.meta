@@ -168,7 +168,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -188,7 +188,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Leo|Action_CuireViande
       takeName: Armature|Action_CuireViande
-      firstFrame: 0
+      firstFrame: 5
       lastFrame: 151
       wrapMode: 0
       orientationOffsetY: 0
@@ -196,7 +196,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -216,15 +216,15 @@ ModelImporter:
     - serializedVersion: 16
       name: Leo|Action_EpepinerPiment
       takeName: Armature|Action_EpepinerPiment
-      firstFrame: 0
-      lastFrame: 121
+      firstFrame: 10
+      lastFrame: 120
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
