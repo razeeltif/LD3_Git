@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Dans ce script, on va activer les GameObjects en fonction de l'ingrédient qu'on veut préparer
+[RequireComponent(typeof(PreparePiment))]
+[RequireComponent(typeof(PrepareVegetables))]
+[RequireComponent(typeof(TurnTheMeat))]
+[RequireComponent(typeof(TurnTheSauce))]
+[RequireComponent(typeof(RecipeManager))]
 public class MiniGameManager : MonoBehaviour {
 
     public int playerNumber;
@@ -20,23 +25,28 @@ public class MiniGameManager : MonoBehaviour {
     public string inputLauncherSauce;*/
 
     //On utilise ces variables pour définir les objets qui vont être concernées par les minijeux
-    public PrepareVegetables pv;
-    public PreparePiment pm;
-    public TurnTheMeat tm;
-    public TurnTheSauce ts;
+    private PrepareVegetables vegetable;
+    private PreparePiment piment;
+    private TurnTheMeat viande;
+    private TurnTheSauce sauce;
+    private RecipeManager recipeManager;
     //public GameObject objectActivateVegetable;
-    //public GameObject objectActivatePiment;
+    /*public GameObject objectActivatePiment;
     //public GameObject objectActivateMeat;
-    //public GameObject objectActivateSauce;
-
+    //public GameObject objectActivateSauce;*/
     // A l'initialisation, on désactive tous les GameObjects
     void Start() {
-        pv = GetComponent<PrepareVegetables>();
-        pm = GetComponent<PreparePiment>();
-        tm = GetComponent<TurnTheMeat>();
-        ts = GetComponent<TurnTheSauce>();
+        vegetable = GetComponent<PrepareVegetables>();
+        piment = GetComponent<PreparePiment>();
+        viande = GetComponent<TurnTheMeat>();
+        sauce = GetComponent<TurnTheSauce>();
+        
+        recipeManager = GetComponent<RecipeManager>();
 
-        playerNumber = GetComponent<Player>().playerNumber;
+        vegetable.enabled = false;
+        piment.enabled = false;
+        viande.enabled = false;
+        sauce.enabled = false;
 
         if (playerNumber == 1) _playerState = LevelManager.getInstance().statePlayer1;
         if (playerNumber == 2) _playerState = LevelManager.getInstance().statePlayer2;
@@ -59,38 +69,38 @@ public class MiniGameManager : MonoBehaviour {
             if (!_isRecipeEnd) {
                 //Si on appuie sur "inputLauncherMeat", on active le GameObject "objectActivateMeat"
                 //Et le GameObject activé permet de lancer son script de jeu
-                if (Input.GetKeyDown(RecipeManager.inputLauncherMeat)) {
+                if (Input.GetButtonDown(recipeManager.inputLauncherMeat)) {
                     //objectActivateMeat.SetActive(true);
-                    if (CheckIngredient(RecipeManager.inputLauncherMeat)) {
+                    if (CheckIngredient(recipeManager.inputLauncherMeat)) {
                         LevelManager.getInstance().SetStatePlay(playerNumber);
-                        tm.enabled = true;
+                        viande.enabled = true;
                     }
                 }
                 //Si on appuie sur "inputLauncherVegetables", on active le GameObject "objectActivateVegetable"
                 //Et le GameObject activé permet de lancer son script de jeu
-                if (Input.GetKeyDown(RecipeManager.inputLauncherVegetables)) {
+                if (Input.GetButtonDown(recipeManager.inputLauncherVegetables)) {
                     //objectActivateVegetable.SetActive(true);
-                    if (CheckIngredient(RecipeManager.inputLauncherVegetables)) {
+                    if (CheckIngredient(recipeManager.inputLauncherVegetables)) {
                         LevelManager.getInstance().SetStatePlay(playerNumber);
-                        pv.enabled = true;
+                        vegetable.enabled = true;
                     }
                 }
                 //Si on appuie sur "inputLauncherPiment", on active le GameObject "objectActivatePiment"
                 //Et le GameObject activé permet de lancer son script de jeu
-                if (Input.GetKeyDown(RecipeManager.inputLauncherPiment)) {
+                if (Input.GetButtonDown(recipeManager.inputLauncherPiment)) {
                     //objectActivatePiment.SetActive(true);
-                    if (CheckIngredient(RecipeManager.inputLauncherPiment)) {
+                    if (CheckIngredient(recipeManager.inputLauncherPiment)) {
                         LevelManager.getInstance().SetStatePlay(playerNumber);
-                        pm.enabled = true;
+                        piment.enabled = true;
                     }
                 }
                 //Si on appuie sur "inputLauncherSauce", on active le GameObject "objectActivateSauce"
                 //Et le GameObject activé permet de lancer son script de jeu
-                if (Input.GetKeyDown(RecipeManager.inputLauncherSauce)) {
+                if (Input.GetButtonDown(recipeManager.inputLauncherSauce)) {
                     //objectActivateSauce.SetActive(true);
-                    if (CheckIngredient(RecipeManager.inputLauncherSauce)) {
+                    if (CheckIngredient(recipeManager.inputLauncherSauce)) {
                         LevelManager.getInstance().SetStatePlay(playerNumber);
-                        ts.enabled = true;
+                        sauce.enabled = true;
                     }
                 }
             }
@@ -110,13 +120,13 @@ public class MiniGameManager : MonoBehaviour {
 
     bool CheckIngredient(string pIngredient) {
 
-        for (int i = 0; i < RecipeManager.getInstance().recipesList.Count; i++) {
+        for (int i = 0; i < recipeManager.recipesList.Count; i++) {
 
-            if (RecipeManager.getInstance().recipesList[i][_step] == pIngredient) {
+            if (recipeManager.recipesList[i][_step] == pIngredient) {
                 _isRecipeEnd = false;
                 _step++;
 
-                if (_step == RecipeManager.getInstance().recipesList[i].Length) {
+                if (_step == recipeManager.recipesList[i].Length) {
                     _isRecipeEnd = true;
                 }
                 return true;

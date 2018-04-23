@@ -10,7 +10,7 @@ public class Player : MonoBehaviour {
 
 	public int pv;
 
-	public GestionManette manette;
+	[HideInInspector] public GestionManette manette;
 
 	void Awake()
 	{
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour {
 	void takeDamage(int damage){
 		pv -= damage;
 		if(pv <= 0){
-			GameManager.getInstance().Death(this);
+			//GameManager.getInstance().Death(this);
 		}
 	}
 }

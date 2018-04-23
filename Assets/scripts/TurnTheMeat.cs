@@ -38,14 +38,14 @@ public class TurnTheMeat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Si on presse "inputToEnter1" et que "inputToEnter2" n'est pas déjà pressé, on passe "input1Entered" à true
-        if (Input.GetKeyDown(inputToEnter1) && !input2Entered)
+        if (Input.GetButtonDown(inputToEnter1) && !input2Entered)
         {
             input1Entered = true;
             //Là, faut mettre le son de retournement de steak
         }
 
         //Si on presse "inputToEnter2" et que "inputToEnter1" n'est pas déjà pressé, on passe "input1Entered" à true
-        if (Input.GetKeyDown(inputToEnter2) && !input1Entered)
+        if (Input.GetButtonDown(inputToEnter2) && !input1Entered)
         {
             input2Entered = true;
             //Là, faut mettre le son de retournement de steak
@@ -54,7 +54,7 @@ public class TurnTheMeat : MonoBehaviour {
         //Si on presse "inputToEnter1" et que "inputToEnter2" à déjà été pressé, on incrémente "inputEnter" de 1
         //et on repasse "input1Entered" et "input2Entered" à false
         //si "inputEnter" est égal à "nbInput", le minijeu est gagné 
-        if ((Input.GetKeyDown(inputToEnter1) && input2Entered) || (Input.GetKeyDown(inputToEnter2) && input1Entered))
+        if ((Input.GetButtonDown(inputToEnter1) && input2Entered) || (Input.GetButtonDown(inputToEnter2) && input1Entered))
         {
             inputEnter++;
             input1Entered = false;

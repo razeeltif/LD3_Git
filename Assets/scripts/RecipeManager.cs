@@ -7,23 +7,18 @@ public class RecipeManager : MonoBehaviour {
 
     //Ces variables servent à définir quels sont les inputs à presser pour lancer les minijeux
     //IL FAUT REMPLIR LES INPUTS ICI
-    public static string inputLauncherMeat = "";
-    public static string inputLauncherVegetables = "";
-    public static string inputLauncherPiment = "";
-    public static string inputLauncherSauce = "";
+    public string inputLauncherMeat = "";
+    public string inputLauncherVegetables = "";
+    public string inputLauncherPiment = "";
+    public string inputLauncherSauce = "";
 
-    string[] _recipe1;
-    string[] _recipe2;
-    string[] _recipe3;
+    string[] _recipe1 = new string[2];
+    string[] _recipe2 = new string[4];
+    string[] _recipe3 = new string[3];
 
-    public List<string[]> recipesList;
+    public List<string[]> recipesList = new List<string[]>();
 
-    // instance du levelManager
-    private static RecipeManager instance;
-
-    // Use this for initialization
     void Start () {
-        recipesList = new List<string[]>();
         InitRecipe1();
         InitRecipe2();
         InitRecipe3();
@@ -36,25 +31,22 @@ public class RecipeManager : MonoBehaviour {
     }
 
     void InitRecipe2() {
-        _recipe1[0] = inputLauncherPiment;
-        _recipe1[1] = inputLauncherPiment;
-        _recipe1[2] = inputLauncherVegetables;
-        _recipe1[3] = inputLauncherMeat;
+        _recipe2[0] = inputLauncherPiment;
+        _recipe2[1] = inputLauncherPiment;
+        _recipe2[2] = inputLauncherVegetables;
+        _recipe2[3] = inputLauncherMeat;
     }
 
     void InitRecipe3() {
-        _recipe1[0] = inputLauncherSauce;
-        _recipe1[1] = inputLauncherMeat;
-        _recipe1[2] = inputLauncherVegetables;
+        _recipe3[0] = inputLauncherSauce;
+        _recipe3[1] = inputLauncherMeat;
+        _recipe3[2] = inputLauncherVegetables;
     }
 
     void InitList() {
-        recipesList[0] = _recipe1;
-        recipesList[1] = _recipe2;
-        recipesList[2] = _recipe3;
+        recipesList.Add(_recipe1);
+        recipesList.Add(_recipe2);
+        recipesList.Add(_recipe3);
     }
 
-    static public RecipeManager getInstance() {
-        return instance;
-    }
 }
