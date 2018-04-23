@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 449bf7a549cf81e4ebf82bb02de716e2
+timeCreated: 1524494074
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: AvantBrasL
+    100004: AvantBrasR
+    100006: BrasL
+    100008: BrasR
+    100010: Chapeau
+    100012: Chapeau_end
+    100014: Cou
+    100016: Dos
+    100018: EpauleL
+    100020: EpauleL_end
+    100022: EpauleR
+    100024: EpauleR_end
+    100026: //RootNode
+    100028: Leo
+    100030: MainL
+    100032: MainL_end
+    100034: MainR
+    100036: MainR_end
+    100038: Root
+    100040: Tete
+    100042: YeuxL
+    100044: YeuxL_end
+    100046: YeuxR
+    100048: YeuxR_end
+    400000: Armature
+    400002: AvantBrasL
+    400004: AvantBrasR
+    400006: BrasL
+    400008: BrasR
+    400010: Chapeau
+    400012: Chapeau_end
+    400014: Cou
+    400016: Dos
+    400018: EpauleL
+    400020: EpauleL_end
+    400022: EpauleR
+    400024: EpauleR_end
+    400026: Leo
+    400028: //RootNode
+    400030: MainL
+    400032: MainL_end
+    400034: MainR
+    400036: MainR_end
+    400038: Root
+    400040: Tete
+    400042: YeuxL
+    400044: YeuxL_end
+    400046: YeuxR
+    400048: YeuxR_end
+    2100000: LeonardoChaire
+    2100002: LeonardoBleuVeste
+    2100004: LeonardoBlondPoils
+    2100006: GustavoNoirYeux_Bouche
+    2100008: Gus_LeoToque
+    2100010: Gus_LeoGrisBoutons
+    4300000: Leo
+    7400000: Armature|Action_coupe
+    7400002: Armature|Action_LancerTomate
+    9500000: //RootNode
+    13700000: Leo
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gus_LeoGrisBoutons
+    second: {fileID: 2100000, guid: 241ac4cd110ba3246a039d7c78d14f48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gus_LeoToque
+    second: {fileID: 2100000, guid: 14570011e5036794dbf0e83401a4852e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GustavoNoirYeux_Bouche
+    second: {fileID: 2100000, guid: 9bd7b4f3797cb6e4fae149c37f11edf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LeonardoBleuVeste
+    second: {fileID: 2100000, guid: 8122afbb7dd929c47906f6506eb73853, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LeonardoBlondPoils
+    second: {fileID: 2100000, guid: 827a629775213f948bf2b707e77cd55b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LeonardoChaire
+    second: {fileID: 2100000, guid: 6d73d0fe72d505f48abff038985a13b3, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
