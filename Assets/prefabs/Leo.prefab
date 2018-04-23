@@ -798,14 +798,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: {fileID: 0}
-  nbInput: 0
-  AxisX: 
-  AxisY: 
+  nbInput: 5
+  AxisX: JoyLeftJoyX2
+  AxisY: JoyLeftJoyY2
   order: 
   accuracy: 0.9
   louche: {fileID: 0}
   soupiere: {fileID: 0}
-  puissance: 0
+  puissance: 0.8
 --- !u!114 &114075449339241762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -819,9 +819,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: {fileID: 0}
   image: {fileID: 0}
-  nbInput: 0
-  inputToEnter1: 
-  inputToEnter2: 
+  nbInput: 5
+  inputToEnter1: JoyRB2
+  inputToEnter2: JoyLB2
   RawMeat: {fileID: 0}
   CookedMeat: {fileID: 0}
 --- !u!114 &114176772946877278
@@ -837,8 +837,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: {fileID: 0}
   image: {fileID: 0}
-  nbPressInput: 0
-  inputToEnter: 
+  nbPressInput: 5
+  inputToEnter: JoyA2
   VegetableUnCut: {fileID: 0}
   VegetableHalfCut: {fileID: 0}
   VegetableCut: {fileID: 0}
@@ -886,12 +886,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: {fileID: 0}
   image: {fileID: 0}
-  minSize: 0
-  maxSize: 0
-  animationSpeed: 0
-  nbInput: 0
-  imagesButtonToEnter: []
-  inputsToEnter: []
+  minSize: 50
+  maxSize: 100
+  animationSpeed: 400
+  nbInput: 10
+  imagesButtonToEnter:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  inputsToEnter:
+  - JoyA2
+  - JoyB2
+  - JoyX2
+  - JoyY2
   ChilliPepperUncut: {fileID: 0}
   ChilliPepperHalfCut: {fileID: 0}
   ChilliPepperCut: {fileID: 0}
