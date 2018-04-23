@@ -76,7 +76,8 @@ public class RecipeManager : MonoBehaviour {
         }
 
         foreach(int i in _possibleList){
-            if (recipesList[i].Length > actualRecipe.Count + 1 && recipesList[i][actualRecipe.Count+1] == pIngredient) {
+            Debug.Log("longueur : " + recipesList[i].Length + " : " + actualRecipe.Count);
+            if (recipesList[i].Length > actualRecipe.Count && recipesList[i][actualRecipe.Count] == pIngredient) {
                 
                 if (actualRecipe.Count+1 == recipesList[i].Length) {
                    recipeFinished(i);
@@ -100,14 +101,15 @@ public class RecipeManager : MonoBehaviour {
     public void resetRecipe(){
         _numFinishedRecipe = -1;
         _isRecipeEnd = false;
+        actualRecipe.Clear();
     }
 
     private bool checkNextIngredient(int index, int numList){
-        if(index > actualRecipe.Count){
+        if(index >= actualRecipe.Count){
             return true;
         }else{
             if(actualRecipe[index] == recipesList[numList][index]){
-                return checkNextIngredient(index++, numList);
+                return checkNextIngredient(++index, numList);
             } else {
                 return false;
             }
