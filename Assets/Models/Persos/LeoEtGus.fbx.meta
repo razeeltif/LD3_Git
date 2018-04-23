@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: a2062e2b5a07e0c459a691b93f9213ec
+timeCreated: 1524502278
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature.001
+    100004: AvantBrasL
+    100006: AvantBrasL 1
+    100008: AvantBrasR
+    100010: AvantBrasR 1
+    100012: BrasL
+    100014: BrasL 1
+    100016: BrasR
+    100018: BrasR 1
+    100020: Chapeau
+    100022: Chapeau 1
+    100024: Chapeau_end
+    100026: Chapeau_end 1
+    100028: Cou
+    100030: Cou 1
+    100032: Dos
+    100034: Dos 1
+    100036: EpauleL
+    100038: EpauleL 1
+    100040: EpauleL_end
+    100042: EpauleL_end 1
+    100044: EpauleR
+    100046: EpauleR 1
+    100048: EpauleR_end
+    100050: EpauleR_end 1
+    100052: Gus
+    100054: Leo
+    100056: //RootNode
+    100058: MainL
+    100060: MainL 1
+    100062: MainL_end
+    100064: MainL_end 1
+    100066: MainR
+    100068: MainR 1
+    100070: MainR_end
+    100072: MainR_end 1
+    100074: Root
+    100076: Root 1
+    100078: Tete
+    100080: Tete 1
+    100082: YeuxL
+    100084: YeuxL 1
+    100086: YeuxL_end
+    100088: YeuxL_end 1
+    100090: YeuxR
+    100092: YeuxR 1
+    100094: YeuxR_end
+    100096: YeuxR_end 1
+    400000: Armature
+    400002: Armature.001
+    400004: AvantBrasL
+    400006: AvantBrasL 1
+    400008: AvantBrasR
+    400010: AvantBrasR 1
+    400012: BrasL
+    400014: BrasL 1
+    400016: BrasR
+    400018: BrasR 1
+    400020: Chapeau
+    400022: Chapeau 1
+    400024: Chapeau_end
+    400026: Chapeau_end 1
+    400028: Cou
+    400030: Cou 1
+    400032: Dos
+    400034: Dos 1
+    400036: EpauleL
+    400038: EpauleL 1
+    400040: EpauleL_end
+    400042: EpauleL_end 1
+    400044: EpauleR
+    400046: EpauleR 1
+    400048: EpauleR_end
+    400050: EpauleR_end 1
+    400052: Gus
+    400054: Leo
+    400056: //RootNode
+    400058: MainL
+    400060: MainL 1
+    400062: MainL_end
+    400064: MainL_end 1
+    400066: MainR
+    400068: MainR 1
+    400070: MainR_end
+    400072: MainR_end 1
+    400074: Root
+    400076: Root 1
+    400078: Tete
+    400080: Tete 1
+    400082: YeuxL
+    400084: YeuxL 1
+    400086: YeuxL_end
+    400088: YeuxL_end 1
+    400090: YeuxR
+    400092: YeuxR 1
+    400094: YeuxR_end
+    400096: YeuxR_end 1
+    2100000: GustavoChaire
+    2100002: GustavoRougeVeste
+    2100004: Gus_LeoGrisBoutons
+    2100006: GustavoNoirYeux_Bouche
+    2100008: GustavoBrunPoils
+    2100010: Gus_LeoToque
+    2100012: LeonardoChaire
+    2100014: LeonardoBleuVeste
+    2100016: LeonardoBlondPoils
+    4300000: Gus
+    4300002: Leo
+    7400000: Armature.001|Action_BoireSoupe
+    7400002: Armature.001|Action_Coupe
+    7400004: Armature.001|Action_CuireViande
+    7400006: Armature.001|Action_LancerAssiette
+    7400008: Armature.001|Action_LancerTomate
+    7400010: Armature.001|Action_RemuerSauce
+    7400012: Armature.001|Action_RemuerSauce.001
+    7400014: Armature|Action_BoireSoupe
+    7400016: Armature|Action_Coupe
+    7400018: Armature|Action_CuireViande
+    7400020: Armature|Action_LancerAssiette
+    7400022: Armature|Action_LancerTomate
+    7400024: Armature|Action_RemuerSauce
+    7400026: Armature|Action_RemuerSauce.001
+    9500000: //RootNode
+    13700000: Gus
+    13700002: Leo
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
