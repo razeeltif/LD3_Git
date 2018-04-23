@@ -34,6 +34,6 @@ public class GameManager : MonoBehaviour {
 
 
 	public void Death(Player player){
-		Debug.Log("Player" + player.playerNumber + " is dead");
+		Debug.Log("Player" + player.playerNumber + " is defeated");
 	}
 }

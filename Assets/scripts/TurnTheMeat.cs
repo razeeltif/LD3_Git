@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Player))]
 public class TurnTheMeat : MonoBehaviour {
 
     
+    Player player;
+
     //Message de victoire du minijeu (à retirer ?)
     public Text message;
     //Nombre de fois qu'on doit presser la combinaison l'input
@@ -14,6 +17,10 @@ public class TurnTheMeat : MonoBehaviour {
     public string inputToEnter1;
     //Le nom du 2e input à presser
     public string inputToEnter2;
+    //Les Objets qui apparaitront dans le jeu
+    public GameObject RawMeat;
+    public GameObject CookedMeat;
+
 
     //Le nombre de combinaison d'input qu'on a rentré
     private int inputEnter;
@@ -22,31 +29,46 @@ public class TurnTheMeat : MonoBehaviour {
     //Indique si on a pressé ou non "inputEnter2"
     private bool input2Entered;
 
+    void Awake()
+    {
+        player = GetComponent<Player>();
+    }
+
     void OnEnable () {
+        RawMeat.SetActive(true);
+        CookedMeat.SetActive(false);
         message.text = "";
         inputEnter = 0;
         input1Entered = false;
         input2Entered = false;
     }
+
+    void OnDisable()
+    {
+        RawMeat.SetActive(false);
+        CookedMeat.SetActive(false);       
+    }
 	
 	// Update is called once per frame
 	void Update () {
         //Si on presse "inputToEnter1" et que "inputToEnter2" n'est pas déjà pressé, on passe "input1Entered" à true
-        if (Input.GetKeyDown(inputToEnter1) && !input2Entered)
+        if (Input.GetButtonDown(inputToEnter1) && !input2Entered)
         {
             input1Entered = true;
+            //Là, faut mettre le son de retournement de steak
         }
 
         //Si on presse "inputToEnter2" et que "inputToEnter1" n'est pas déjà pressé, on passe "input1Entered" à true
-        if (Input.GetKeyDown(inputToEnter2) && !input1Entered)
+        if (Input.GetButtonDown(inputToEnter2) && !input1Entered)
         {
             input2Entered = true;
+            //Là, faut mettre le son de retournement de steak
         }
 
         //Si on presse "inputToEnter1" et que "inputToEnter2" à déjà été pressé, on incrémente "inputEnter" de 1
         //et on repasse "input1Entered" et "input2Entered" à false
         //si "inputEnter" est égal à "nbInput", le minijeu est gagné 
-        if ((Input.GetKeyDown(inputToEnter1) && input2Entered) || (Input.GetKeyDown(inputToEnter2) && input1Entered))
+        if ((Input.GetButtonDown(inputToEnter1) && input2Entered) || (Input.GetButtonDown(inputToEnter2) && input1Entered))
         {
             inputEnter++;
             input1Entered = false;
@@ -54,9 +76,12 @@ public class TurnTheMeat : MonoBehaviour {
             if (inputEnter == nbInput)
             {
                 //il faudra surement changer cela
-                message.text = "Félicitation";
+                message.text = "LA VIANDE !";
+                RawMeat.SetActive(false);
+                CookedMeat.SetActive(true);
                 //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
-                gameObject.SetActive(false);
+                enabled = false;
+                player.setStateWaiting();
             }
         }
     }
