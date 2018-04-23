@@ -52,7 +52,7 @@ public class PreparePiment : MonoBehaviour {
         inputEntered = 0;
 
         changeIndex();
-
+        player.anim.wrapMode = WrapMode.Loop;
         player.anim.Play(player.namePlayer + "|Action_EpepinerPiment");
 
 	}
@@ -63,6 +63,7 @@ public class PreparePiment : MonoBehaviour {
         ChilliPepperHalfCut.SetActive(false);
         ChilliPepperCut.SetActive(false);
         image.enabled=false;
+        player.anim.wrapMode = WrapMode.Once;
         player.anim.Stop(player.namePlayer + "|Action_EpepinerPiment");
     }
 	
@@ -110,6 +111,4 @@ public class PreparePiment : MonoBehaviour {
     private void animationImage(){
         image.rectTransform.sizeDelta = new Vector2(minSize, minSize);
     }
-
-
 }

@@ -60,7 +60,7 @@ public class TurnTheSauce : MonoBehaviour {
 
         louche.SetActive(true);
         soupiere.SetActive(true);
-
+        player.anim.wrapMode = WrapMode.Loop;
         player.anim.Play(player.namePlayer + "|Action_RemuerSauce");
     }
 
@@ -68,7 +68,7 @@ public class TurnTheSauce : MonoBehaviour {
     {
         louche.SetActive(false);
         soupiere.SetActive(false);
-
+        player.anim.wrapMode = WrapMode.Once;
         player.anim.Stop(player.namePlayer + "|Action_RemuerSauce");
     }
 	

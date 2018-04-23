@@ -36,7 +36,7 @@ public class PrepareVegetables : MonoBehaviour {
         VegetableCut.SetActive(false);
         inputEntered = 0;
         message.text = "";
-
+        player.anim.wrapMode = WrapMode.Loop;
         player.anim.Play(player.namePlayer + "|Action_Coupe");
     }
 	
@@ -44,7 +44,7 @@ public class PrepareVegetables : MonoBehaviour {
         VegetableUnCut.SetActive(false);
         VegetableHalfCut.SetActive(false);
         VegetableCut.SetActive(false);
-
+        player.anim.wrapMode = WrapMode.Once;
         player.anim.Stop(player.namePlayer + "|Action_Coupe");
     }
 
