@@ -5,6 +5,8 @@ using UnityEngine;
 //CODE A LA DURE MANAGER
 public class RecipeManager : MonoBehaviour {
 
+    Player player;
+
     //Ces variables servent à définir quels sont les inputs à presser pour lancer les minijeux
     //IL FAUT REMPLIR LES INPUTS ICI
     public string inputLauncherMeat = "";
@@ -30,6 +32,7 @@ public class RecipeManager : MonoBehaviour {
         InitRecipe1();
         InitRecipe2();
         InitList();
+        player = GetComponent<Player>();
 	}
 	
     void InitRecipe0() {
@@ -90,6 +93,7 @@ public class RecipeManager : MonoBehaviour {
 
         Debug.Log("mauvais choix d'aliments");
         //Lancer un waitForSeconds
+        player.anim.Play(player.namePlayer+ "|Action_Etourdi");
         return false;
     }
 

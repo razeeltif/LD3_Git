@@ -60,12 +60,16 @@ public class TurnTheSauce : MonoBehaviour {
 
         louche.SetActive(true);
         soupiere.SetActive(true);
+
+        player.anim.Play(player.namePlayer + "|Action_RemuerSauce");
     }
 
     void OnDisable()
     {
         louche.SetActive(false);
         soupiere.SetActive(false);
+
+        player.anim.Stop(player.namePlayer + "|Action_RemuerSauce");
     }
 	
 	// Update is called once per frame

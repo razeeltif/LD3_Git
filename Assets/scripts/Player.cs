@@ -13,8 +13,9 @@ public class Player : MonoBehaviour {
 	public LevelManager.STATE state;
 
 	private bool defense = false;
-
+    [HideInInspector] public string namePlayer;
 	[HideInInspector] public GestionManette manette;
+    [HideInInspector] public Animation anim;
 
     // timer s'occupant de chronométrer le delai d'attaque
     Timer timerDelayAttacking;
@@ -29,8 +30,15 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		manette.playerNumber = playerNumber;
-
-
+        anim = GetComponent<Animation>();
+        if(playerNumber == 1)
+        {
+            namePlayer = "Gus";
+        }
+        if(playerNumber == 2)
+        {
+            namePlayer = "Leo";
+        }
         // initialisation du timer (il n'est pas lancé)
         timerDelayAttacking = Timer.Initialize(delayAttacking, this);
 		
@@ -48,7 +56,7 @@ public class Player : MonoBehaviour {
 	/// fonction appelé à chaque fois que le joueur subit des dégats
 	/// </summary>
 	/// <param name="damage"></param>
-	void takeDamage(int damage){
+	public void takeDamage(int damage){
 		// si le joueur possède de la défense, on annule les dommages et enlève la défense
 		if(defense){
 			setDefense(false);
@@ -64,8 +72,10 @@ public class Player : MonoBehaviour {
 	public void Attack(int damage){
 		// grenade farcie
 		if(damage == 5){
-			Debug.Log("GRENADE !");
+            anim.Play(namePlayer+"|Action_LancerTomate");
+            Debug.Log("GRENADE !");
 		}else if( damage == 10){
+            anim.Play(namePlayer+"|Action_LancerAssiette");
 			Debug.Log("ASSIETTE !");
 		}
 	}
@@ -74,6 +84,7 @@ public class Player : MonoBehaviour {
 		if(defense != _def){
 			defense = _def;
 			if(defense == true){
+                anim.Play(namePlayer + "|Action_BoireSoupe");
 				// TODO : animation de la mise de défense
 			}else{
 				// TODO : animation de l'enlevage de défense

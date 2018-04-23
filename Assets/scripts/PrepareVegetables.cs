@@ -36,12 +36,16 @@ public class PrepareVegetables : MonoBehaviour {
         VegetableCut.SetActive(false);
         inputEntered = 0;
         message.text = "";
+
+        player.anim.Play(player.namePlayer + "|Action_Coupe");
     }
 	
     void OnDisable(){
         VegetableUnCut.SetActive(false);
         VegetableHalfCut.SetActive(false);
-        VegetableCut.SetActive(false);        
+        VegetableCut.SetActive(false);
+
+        player.anim.Stop(player.namePlayer + "|Action_Coupe");
     }
 
 	// Update is called once per frame

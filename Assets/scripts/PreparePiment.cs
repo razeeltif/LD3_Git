@@ -53,6 +53,8 @@ public class PreparePiment : MonoBehaviour {
 
         changeIndex();
 
+        player.anim.Play(player.namePlayer + "|Action_EpepinerPiment");
+
 	}
 
     void OnDisable()
@@ -60,7 +62,8 @@ public class PreparePiment : MonoBehaviour {
         ChilliPepperUncut.SetActive(false);
         ChilliPepperHalfCut.SetActive(false);
         ChilliPepperCut.SetActive(false);
-        image.enabled=false;   
+        image.enabled=false;
+        player.anim.Stop(player.namePlayer + "|Action_EpepinerPiment");
     }
 	
 	// Update is called once per frame

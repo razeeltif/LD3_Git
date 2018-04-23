@@ -42,12 +42,15 @@ public class TurnTheMeat : MonoBehaviour {
         inputEnter = 0;
         input1Entered = false;
         input2Entered = false;
+
+        player.anim.Play(player.namePlayer + "|Action_CuireViande");
     }
 
     void OnDisable()
     {
         RawMeat.SetActive(false);
-        CookedMeat.SetActive(false);       
+        CookedMeat.SetActive(false);
+        player.anim.Stop(player.namePlayer + "|Action_CuireViande");
     }
 	
 	// Update is called once per frame
