@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Player))]
 public class TurnTheMeat : MonoBehaviour {
 
     
+    Player player;
+
     //Message de victoire du minijeu (à retirer ?)
     public Text message;
     //Nombre de fois qu'on doit presser la combinaison l'input
@@ -26,6 +29,11 @@ public class TurnTheMeat : MonoBehaviour {
     //Indique si on a pressé ou non "inputEnter2"
     private bool input2Entered;
 
+    void Awake()
+    {
+        player = GetComponent<Player>();
+    }
+
     void OnEnable () {
         RawMeat.SetActive(true);
         CookedMeat.SetActive(false);
@@ -33,6 +41,12 @@ public class TurnTheMeat : MonoBehaviour {
         inputEnter = 0;
         input1Entered = false;
         input2Entered = false;
+    }
+
+    void OnDisable()
+    {
+        RawMeat.SetActive(false);
+        CookedMeat.SetActive(false);       
     }
 	
 	// Update is called once per frame
@@ -62,11 +76,12 @@ public class TurnTheMeat : MonoBehaviour {
             if (inputEnter == nbInput)
             {
                 //il faudra surement changer cela
-                message.text = "Félicitation";
+                message.text = "LA VIANDE !";
                 RawMeat.SetActive(false);
                 CookedMeat.SetActive(true);
                 //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
                 enabled = false;
+                player.setStateWaiting();
             }
         }
     }

@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 
-	public void Death(int player){
-		Debug.Log("Player" + player + " is dead");
+	public void Death(Player player){
+		Debug.Log("Player" + player.playerNumber + " is defeated");
 	}
 }

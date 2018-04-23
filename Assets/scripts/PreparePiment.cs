@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Player))]
 public class PreparePiment : MonoBehaviour {
 
-    
+    Player player;
     //Message de victoire du minijeu (à retirer ?)
     public Text message;
     //image de l'input à rentrer
@@ -27,6 +28,11 @@ public class PreparePiment : MonoBehaviour {
     //Le nombre d'input qu'on a rentré
     private int inputEntered;
 
+    void Awake()
+    {
+        player = GetComponent<Player>();
+    }
+
     void OnEnable () {
 
         image.enabled = true;
@@ -45,6 +51,14 @@ public class PreparePiment : MonoBehaviour {
         changeIndex();
 
 	}
+
+    void OnDisable()
+    {
+        ChilliPepperUncut.SetActive(false);
+        ChilliPepperHalfCut.SetActive(false);
+        ChilliPepperCut.SetActive(false);
+        image.enabled=false;   
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -62,12 +76,13 @@ public class PreparePiment : MonoBehaviour {
             if(inputEntered == nbInput)
             {
                 //Il faut surement changer cette partie de code
-                message.text = "Bravo";
+                message.text = "PIMENTS !";
                 ChilliPepperHalfCut.SetActive(false);
                 ChilliPepperCut.SetActive(true);
                 //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
                 enabled = false;
                 image.enabled=false;
+                player.setStateWaiting();
                 
             }
         }
