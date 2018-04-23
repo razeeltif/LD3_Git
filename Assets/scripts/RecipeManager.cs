@@ -12,41 +12,106 @@ public class RecipeManager : MonoBehaviour {
     public string inputLauncherPiment = "";
     public string inputLauncherSauce = "";
 
-    string[] _recipe1 = new string[2];
-    string[] _recipe2 = new string[4];
-    string[] _recipe3 = new string[3];
+    string[] _recipe0 = new string[2];
+    string[] _recipe1 = new string[4];
+    string[] _recipe2 = new string[3];
 
     public List<string[]> recipesList = new List<string[]>();
 
+    // la liste des ingrédients utilisées
+    public List<string> actualRecipe = new List<string>();
+
+    [HideInInspector] public bool _isRecipeEnd = false;
+
+    [HideInInspector] public int _numFinishedRecipe = -1;
+
     void Start () {
+        InitRecipe0();
         InitRecipe1();
         InitRecipe2();
-        InitRecipe3();
         InitList();
 	}
 	
+    void InitRecipe0() {
+        _recipe0[0] = inputLauncherPiment;
+        _recipe0[1] = inputLauncherVegetables;
+    }
+
     void InitRecipe1() {
         _recipe1[0] = inputLauncherPiment;
-        _recipe1[1] = inputLauncherVegetables;
+        _recipe1[1] = inputLauncherPiment;
+        _recipe1[2] = inputLauncherVegetables;
+        _recipe1[3] = inputLauncherMeat;
     }
 
     void InitRecipe2() {
-        _recipe2[0] = inputLauncherPiment;
-        _recipe2[1] = inputLauncherPiment;
+        _recipe2[0] = inputLauncherSauce;
+        _recipe2[1] = inputLauncherMeat;
         _recipe2[2] = inputLauncherVegetables;
-        _recipe2[3] = inputLauncherMeat;
-    }
-
-    void InitRecipe3() {
-        _recipe3[0] = inputLauncherSauce;
-        _recipe3[1] = inputLauncherMeat;
-        _recipe3[2] = inputLauncherVegetables;
     }
 
     void InitList() {
+        recipesList.Add(_recipe0);
         recipesList.Add(_recipe1);
         recipesList.Add(_recipe2);
-        recipesList.Add(_recipe3);
+    }
+
+    public bool CheckIngredient(string pIngredient) {
+
+        // on analyse les possibles listes en fonction des ingredients déjà préparés
+        List<int> _possibleList = new List<int>();
+
+        // si il n'y pas pas d'ingrédients dèjà préparé,on ajoute toutes les listes
+        if(actualRecipe.Count == 0){
+            for(int i = 0; i < recipesList.Count; i++){
+                _possibleList.Add(i);
+            }
+        // sinon, on compare les ingrédients déjà préparé avec ceux des listes de recettes
+        }else{
+            for(int i = 0; i < recipesList.Count; i++){
+                if(checkNextIngredient(0, i)){
+                    _possibleList.Add(i);
+                }
+            }
+        }
+
+        foreach(int i in _possibleList){
+            if (recipesList[i].Length > actualRecipe.Count + 1 && recipesList[i][actualRecipe.Count+1] == pIngredient) {
+                
+                if (actualRecipe.Count+1 == recipesList[i].Length) {
+                   recipeFinished(i);
+                   return true;
+                }
+                actualRecipe.Add(pIngredient);
+                return true;
+            }
+        }
+
+        Debug.Log("mauvais choix d'aliments");
+        //Lancer un waitForSeconds
+        return false;
+    }
+
+    void recipeFinished(int numRecette){
+        _numFinishedRecipe = numRecette;
+        _isRecipeEnd = true;
+    }
+
+    public void resetRecipe(){
+        _numFinishedRecipe = -1;
+        _isRecipeEnd = false;
+    }
+
+    private bool checkNextIngredient(int index, int numList){
+        if(index > actualRecipe.Count){
+            return true;
+        }else{
+            if(actualRecipe[index] == recipesList[numList][index]){
+                return checkNextIngredient(index++, numList);
+            } else {
+                return false;
+            }
+        }
     }
 
 }

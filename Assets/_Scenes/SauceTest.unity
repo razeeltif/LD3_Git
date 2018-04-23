@@ -2722,7 +2722,7 @@ MonoBehaviour:
   pv: 50
   state: 0
   manette: {fileID: 0}
-  delayAttacking: 0
+  delayAttacking: 10
 --- !u!1001 &2040935950
 Prefab:
   m_ObjectHideFlags: 0
@@ -2857,8 +2857,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -177.29318, y: 125.86}
-  m_SizeDelta: {x: 218.39, y: 60}
+  m_AnchoredPosition: {x: -228, y: 125.86}
+  m_SizeDelta: {x: 400, y: 57.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2102075443
 MonoBehaviour:
@@ -2886,7 +2886,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -3032,8 +3032,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 171, y: 125.859985}
-  m_SizeDelta: {x: 218.39, y: 60}
+  m_AnchoredPosition: {x: 248, y: 125.859985}
+  m_SizeDelta: {x: 400, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2142305006
 CanvasRenderer:
@@ -3067,7 +3067,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
