@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
         EndScreen.SetActive(true);
         textEnd.text = "Player" + player.playerNumber + " is defeated";
 
-        Invoke("ReloadScene", 1f);
+        Invoke("ReloadScene", 2f);
     }
 
     public void ReloadScene() {

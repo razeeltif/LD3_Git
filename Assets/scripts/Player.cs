@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
 	private bool defense = false;
     [HideInInspector] public string namePlayer;
 	[HideInInspector] public GestionManette manette;
-    [HideInInspector] public Animation anim;
+    public Animation anim;
 
     // timer s'occupant de chronométrer le delai d'attaque
     Timer timerDelayAttacking;
@@ -25,6 +25,7 @@ public class Player : MonoBehaviour {
 
 	void Awake()
 	{
+		anim = GetComponent<Animation>();
 		manette = GetComponent<GestionManette>();
         playMusic = GameManager.FindObjectOfType<PlayMusic>();
 	}
@@ -32,7 +33,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		manette.playerNumber = playerNumber;
-        anim = GetComponent<Animation>();
+        
         if(playerNumber == 1)
         {
             namePlayer = "Gus";
