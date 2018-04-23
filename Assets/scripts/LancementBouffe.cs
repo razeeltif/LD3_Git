@@ -11,9 +11,24 @@ public class LancementBouffe : MonoBehaviour {
 
 	public float thrust;
 
-	public Vector3 positionDeDepart;
+	public Vector3 positionDeDepart2;
 
-	public Vector3 rotationObjet;
+	public Vector3 rotationObjet2;
+
+	public Vector3 positionDeDepart1;
+
+	public Vector3 rotationObjet1;
+
+	public static LancementBouffe instance;
+
+	public /// <summary>
+	/// Awake is called when the script instance is being loaded.
+	/// </summary>
+	void Awake()
+	{
+		if(instance == null)
+		instance = this;
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -21,11 +36,30 @@ public class LancementBouffe : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.B)){
-			Debug.Log("yolo");
+		/*if(Input.GetKeyDown(KeyCode.B)){
 			GameObject obj = Instantiate(assiettePrefab);
-			obj.transform.position = new Vector3(-4.5f, 1, -0.3f);
-			obj.transform.rotation = Quaternion.Euler(-25, 90, 0);
+			obj.transform.position = positionDeDepart1;
+			obj.transform.rotation = Quaternion.Euler(rotationObjet1);
+		}
+
+		if(Input.GetKeyDown(KeyCode.C)){
+			GameObject obj = Instantiate(assiettePrefab);
+			obj.transform.position = positionDeDepart2;
+			obj.transform.rotation = Quaternion.Euler(rotationObjet2);
+		}*/
+	}
+
+	public void  lancerAssiette(int playerNumber){
+		if(playerNumber == 1){
+			GameObject obj = Instantiate(assiettePrefab);
+			obj.transform.position = positionDeDepart1;
+			obj.transform.rotation = Quaternion.Euler(rotationObjet1);			
+		}else if(playerNumber == 2){
+			GameObject obj = Instantiate(assiettePrefab);
+			obj.transform.position = positionDeDepart2;
+			obj.transform.rotation = Quaternion.Euler(rotationObjet2);			
 		}
 	}
+
+
 }
