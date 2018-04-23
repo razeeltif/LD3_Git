@@ -12,8 +12,6 @@ using UnityEngine;
 public class MiniGameManager : MonoBehaviour {
 
     Player player;
-    int _step;
-    bool _isRecipeEnd;
 
 
     //Ces variables servent à définir quels sont les inputs à presser pour lancer les minijeux
@@ -46,8 +44,6 @@ public class MiniGameManager : MonoBehaviour {
 
         disableAllMiniGame();
 
-        _step = 0;
-        _isRecipeEnd = false;
 
     }
 
@@ -58,11 +54,11 @@ public class MiniGameManager : MonoBehaviour {
         /*if(objectActivateVegetable.activeSelf == false && objectActivatePiment.activeSelf == false && 
               objectActivateMeat.activeSelf == false && objectActivateSauce.activeSelf == false)*/
         if (player.state == LevelManager.STATE.isWaiting) {
-            if (!_isRecipeEnd) {
+            if (!recipeManager._isRecipeEnd) {
                 //Si on appuie sur "inputLauncherMeat", on active le GameObject "objectActivateMeat"
                 //Et le GameObject activé permet de lancer son script de jeu
                 if (Input.GetButtonDown(recipeManager.inputLauncherMeat)) {
-                    if (CheckIngredient(recipeManager.inputLauncherMeat)) {
+                    if (recipeManager.CheckIngredient(recipeManager.inputLauncherMeat)) {
                         player.setStatePlaying();
                         disableAllMiniGame();
                         viande.enabled = true;
@@ -71,7 +67,7 @@ public class MiniGameManager : MonoBehaviour {
                 //Si on appuie sur "inputLauncherVegetables", on active le GameObject "objectActivateVegetable"
                 //Et le GameObject activé permet de lancer son script de jeu
                 if (Input.GetButtonDown(recipeManager.inputLauncherVegetables)) {
-                    if (CheckIngredient(recipeManager.inputLauncherVegetables)) {
+                    if (recipeManager.CheckIngredient(recipeManager.inputLauncherVegetables)) {
                         player.setStatePlaying();
                         disableAllMiniGame();
                         vegetable.enabled = true;
@@ -80,7 +76,7 @@ public class MiniGameManager : MonoBehaviour {
                 //Si on appuie sur "inputLauncherPiment", on active le GameObject "objectActivatePiment"
                 //Et le GameObject activé permet de lancer son script de jeu
                 if (Input.GetButtonDown(recipeManager.inputLauncherPiment)) {
-                    if (CheckIngredient(recipeManager.inputLauncherPiment)) {
+                    if (recipeManager.CheckIngredient(recipeManager.inputLauncherPiment)) {
                         player.setStatePlaying();
                         disableAllMiniGame();
                         piment.enabled = true;
@@ -89,54 +85,32 @@ public class MiniGameManager : MonoBehaviour {
                 //Si on appuie sur "inputLauncherSauce", on active le GameObject "objectActivateSauce"
                 //Et le GameObject activé permet de lancer son script de jeu
                 if (Input.GetButtonDown(recipeManager.inputLauncherSauce)) {
-                    if (CheckIngredient(recipeManager.inputLauncherSauce)) {
+                    if (recipeManager.CheckIngredient(recipeManager.inputLauncherSauce)) {
                         player.setStatePlaying();
                         disableAllMiniGame();
                         sauce.enabled = true;
                     }
                 }
-            }
-
-            else {
+            } else {
                 CheckRecipe();
                 player.setStateAttacking();
-                _step = 0;
-                _isRecipeEnd = false;  
+                recipeManager.resetRecipe();
             }
         }
-    }
-
-    bool CheckIngredient(string pIngredient) {
-
-        for (int i = 0; i < recipeManager.recipesList.Count; i++) {
-
-            if (recipeManager.recipesList[i].Length > _step && recipeManager.recipesList[i][_step] == pIngredient) {
-                
-                if (_step == recipeManager.recipesList[i].Length) {
-                    _isRecipeEnd = true;
-                }
-                _step++;
-                return true;
-
-            }
-        }
-        Debug.Log("mauvais choix d'aliments");
-        //Lancer un waitForSeconds
-        return false;
     }
 
     //CODE A LA DURE \o/
     void CheckRecipe() {
         // grenade
-        if (_step == 2) {
+        if (recipeManager._numFinishedRecipe == 0) {
             player.Attack(5);
         }
         // assiette
-        if (_step == 4) {
-            player.Attack(10);
+        if (recipeManager._numFinishedRecipe == 1) {
+            player.Attack(15);
         }
         // soupe
-        if (_step == 3) {
+        if (recipeManager._numFinishedRecipe == 2) {
             player.setDefense(true);
         }
     }
