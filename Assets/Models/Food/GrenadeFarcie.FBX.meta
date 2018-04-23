@@ -46,6 +46,7 @@ ModelImporter:
     2300012: Fourchette
     2300014: Louche
     2300016: PlancheDecoupe
+    2300018: //RootNode
     3300000: ChiliPeper
     3300002: Haricot
     3300004: Tomato
@@ -55,6 +56,7 @@ ModelImporter:
     3300012: Fourchette
     3300014: Louche
     3300016: PlancheDecoupe
+    3300018: //RootNode
     4300000: ChiliPeper
     4300002: Tomato
     4300004: Haricot
