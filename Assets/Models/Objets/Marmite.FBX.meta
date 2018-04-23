@@ -1,78 +1,22 @@
 fileFormatVersion: 2
-guid: 19879fe34544689458ceb814934e6527
-timeCreated: 1524438367
+guid: d96fdd75d12dddc4dba82c91b024bdf6
+timeCreated: 1524519347
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: 03_Tomato
-    100002: Assiette
-    100004: Haricot
-    100006: Meat
-    100008: Sauce
-    100010: //RootNode
-    400000: 03_Tomato
-    400002: Assiette
-    400004: Haricot
-    400006: Meat
-    400008: Sauce
-    400010: //RootNode
-    2100000: No Name
-    2100002: BeigeSoupe
-    2100004: RougeTomate.001
-    2100006: VertHaricot
-    2100008: BrunViande
-    2100010: BlancBolCeramique
-    2100012: RougeDetailCeramiqueBol
-    2300000: 03_Tomato
-    2300002: Assiette
-    2300004: Haricot
-    2300006: Meat
-    2300008: Sauce
-    2300010: //RootNode
-    3300000: 03_Tomato
-    3300002: Assiette
-    3300004: Haricot
-    3300006: Meat
-    3300008: Sauce
-    3300010: //RootNode
-    4300000: Assiette
-    4300002: Sauce
-    4300004: Meat
-    4300006: Haricot
-    4300008: 03_Tomato
-    4300010: Soupe
+    100000: //RootNode
+    400000: //RootNode
+    2100000: MetalMarmite
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Marmite
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BeigeSoupe
-    second: {fileID: 2100000, guid: ffc0395a9d65b944699155f69606139a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BlancBolCeramique
-    second: {fileID: 2100000, guid: 8df1796e4ad77684db6f27f0aeb07070, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BrunViande
-    second: {fileID: 2100000, guid: a1ed182e197bbdf43be62aa78f5c18d1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: RougeDetailCeramiqueBol
-    second: {fileID: 2100000, guid: f2695f700fdf5d64e8bd0baba49bcc9a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: RougeTomate.001
-    second: {fileID: 2100000, guid: 30e54702b1a15ee45a7fbe351df2a093, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: VertHaricot
-    second: {fileID: 2100000, guid: 81eaebc74712e044c889f77a10a92a4b, type: 2}
+      name: MetalMarmite
+    second: {fileID: 2100000, guid: bd23e0bde99b6c04bb678ab7a1947a2f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -102,7 +46,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.1
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

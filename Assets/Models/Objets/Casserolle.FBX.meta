@@ -1,92 +1,28 @@
 fileFormatVersion: 2
-guid: c1dda4aea87bbb94c9988a28d9d93048
-timeCreated: 1524437449
+guid: 9ddc3ba43410b7140a4b6917e916b19c
+timeCreated: 1524519347
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: ChiliPeper
-    100002: //RootNode
-    100004: Haricot
-    100006: Tomato
-    100008: CouteauManche
-    100010: Cube.004
-    100012: "Cuill\xE8re"
-    100014: Fourchette
-    100016: Louche
-    100018: PlancheDecoupe
-    400000: ChiliPeper
-    400002: //RootNode
-    400004: Haricot
-    400006: Tomato
-    400008: CouteauManche
-    400010: Cube.004
-    400012: "Cuill\xE8re"
-    400014: Fourchette
-    400016: Louche
-    400018: PlancheDecoupe
-    2100000: No Name
-    2100002: VertFeuilleTomate
-    2100004: VertHarricot
-    2100006: BrunViande
-    2100008: RougeTomate
-    2100010: Cuillere
-    2100012: Fourchette
-    2100014: Planche
-    2100016: Louche
-    2100018: MancheCouteau
-    2100020: Lame
-    2100022: Clou
-    2300000: ChiliPeper
-    2300002: Haricot
-    2300004: Tomato
-    2300006: CouteauManche
-    2300008: Cube.004
-    2300010: "Cuill\xE8re"
-    2300012: Fourchette
-    2300014: Louche
-    2300016: PlancheDecoupe
-    2300018: //RootNode
-    3300000: ChiliPeper
-    3300002: Haricot
-    3300004: Tomato
-    3300006: CouteauManche
-    3300008: Cube.004
-    3300010: "Cuill\xE8re"
-    3300012: Fourchette
-    3300014: Louche
-    3300016: PlancheDecoupe
-    3300018: //RootNode
-    4300000: ChiliPeper
-    4300002: Tomato
-    4300004: Haricot
-    4300006: Cube.004
-    4300008: "Cuill\xE8re"
-    4300010: Fourchette
-    4300012: PlancheDecoupe
-    4300014: Louche
-    4300016: CouteauManche
+    100000: //RootNode
+    400000: //RootNode
+    2100000: "M\xE9talCasserolle"
+    2100002: MancheCaserolle
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Casserole
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: BrunViande
-    second: {fileID: 2100000, guid: ea8f4f37eab2cc34385ba7ad7156f030, type: 2}
+      name: MancheCaserolle
+    second: {fileID: 2100000, guid: 6dba8076737ea8544a5789cecc9cca2c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: RougeTomate
-    second: {fileID: 2100000, guid: bcd86f93817284d47a87a1c2c8c3c5ff, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: VertFeuilleTomate
-    second: {fileID: 2100000, guid: e93ea3d7fe8b5ed468421be18611e50b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: VertHarricot
-    second: {fileID: 2100000, guid: 688231c2081fc5b48896e2cc29a47c5d, type: 2}
+      name: "M\xE9talCasserolle"
+    second: {fileID: 2100000, guid: ea6f8554d042f4646b53a3673eecdadb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -116,7 +52,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.07
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
