@@ -9,20 +9,61 @@ ModelImporter:
     100002: //RootNode
     100004: Haricot
     100006: Tomato
+    100008: CouteauManche
+    100010: Cube.004
+    100012: "Cuill\xE8re"
+    100014: Fourchette
+    100016: Louche
+    100018: PlancheDecoupe
     400000: ChiliPeper
     400002: //RootNode
     400004: Haricot
     400006: Tomato
+    400008: CouteauManche
+    400010: Cube.004
+    400012: "Cuill\xE8re"
+    400014: Fourchette
+    400016: Louche
+    400018: PlancheDecoupe
     2100000: No Name
+    2100002: VertFeuilleTomate
+    2100004: VertHarricot
+    2100006: BrunViande
+    2100008: RougeTomate
+    2100010: Cuillere
+    2100012: Fourchette
+    2100014: Planche
+    2100016: Louche
+    2100018: MancheCouteau
+    2100020: Lame
+    2100022: Clou
     2300000: ChiliPeper
     2300002: Haricot
     2300004: Tomato
+    2300006: CouteauManche
+    2300008: Cube.004
+    2300010: "Cuill\xE8re"
+    2300012: Fourchette
+    2300014: Louche
+    2300016: PlancheDecoupe
     3300000: ChiliPeper
     3300002: Haricot
     3300004: Tomato
+    3300006: CouteauManche
+    3300008: Cube.004
+    3300010: "Cuill\xE8re"
+    3300012: Fourchette
+    3300014: Louche
+    3300016: PlancheDecoupe
     4300000: ChiliPeper
     4300002: Tomato
     4300004: Haricot
+    4300006: Cube.004
+    4300008: "Cuill\xE8re"
+    4300010: Fourchette
+    4300012: PlancheDecoupe
+    4300014: Louche
+    4300016: CouteauManche
   externalObjects: {}
   materials:
     importMaterials: 1
