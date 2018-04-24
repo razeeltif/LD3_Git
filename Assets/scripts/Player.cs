@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
     [HideInInspector] public string namePlayer;
 	[HideInInspector] public GestionManette manette;
     public Animation anim;
+    public LightAudioManager lightAudioManager;
 
     // timer s'occupant de chronométrer le delai d'attaque
     Timer timerDelayAttacking;
@@ -27,7 +28,7 @@ public class Player : MonoBehaviour {
 	{
 		anim = GetComponent<Animation>();
 		manette = GetComponent<GestionManette>();
-        playMusic = GameManager.FindObjectOfType<PlayMusic>();
+        lightAudioManager = GetComponent<LightAudioManager>();
 	}
 
 	// Use this for initialization
@@ -62,10 +63,14 @@ public class Player : MonoBehaviour {
 	public void takeDamage(int damage){
 		// si le joueur possède de la défense, on annule les dommages et enlève la défense
 		if(defense){
-			setDefense(false);
+            if (namePlayer == "Gus") lightAudioManager.Play("Gus_Safe1");
+            if (namePlayer == "Leo") lightAudioManager.Play("Gus_Safe1");
+            setDefense(false);
 			return;
 		}else{
 			pv -= damage;
+            if (namePlayer == "Gus") lightAudioManager.Play("Gus_Hit1");
+            if (namePlayer == "Leo") lightAudioManager.Play("Leo_Hit1");
             if (pv <= (50*0.75)) {
                 playMusic.PlaySelectedMusic(2);
                 return;
@@ -89,10 +94,12 @@ public class Player : MonoBehaviour {
 		// grenade farcie
 		if(damage == 5){
             anim.Play(namePlayer+"|Action_LancerTomate");
+            lightAudioManager.Play("Lancer_Tomate");
             Debug.Log("GRENADE !");
 		}else if( damage == 10){
             anim.Play(namePlayer+"|Action_LancerAssiette");
-			Debug.Log("ASSIETTE !");
+            lightAudioManager.Play("Lancer_Assiette");
+            Debug.Log("ASSIETTE !");
 		}
 	}
 
@@ -101,8 +108,11 @@ public class Player : MonoBehaviour {
 			defense = _def;
 			if(defense == true){
                 anim.Play(namePlayer + "|Action_BoireSoupe");
-				// TODO : animation de la mise de défense
-			}else{
+                if (namePlayer == "Gus") lightAudioManager.Play("Eat_Gus");
+                if (namePlayer == "Leo") lightAudioManager.Play("Eat_Leo");
+                // TODO : animation de la mise de défense
+            }
+            else{
 				// TODO : animation de l'enlevage de défense
 			}
 		}

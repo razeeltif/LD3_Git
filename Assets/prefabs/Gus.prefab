@@ -805,6 +805,7 @@ MonoBehaviour:
   namePlayer: 
   manette: {fileID: 0}
   anim: {fileID: 0}
+  lightAudioManager: {fileID: 0}
   delayAttacking: 2
 --- !u!114 &114055250543988512
 MonoBehaviour:
@@ -846,45 +847,24 @@ MonoBehaviour:
     spatialBlend: 0
     loop: 0
     audioSource: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: Lancer_Assiette
+    clip: {fileID: 8300000, guid: c4daee95aee2eee4488222c279c774d9, type: 3}
+    volume: 0.5
+    pitch: 1
     spatialBlend: 0
     loop: 0
     audioSource: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: Assiette_Break
+    clip: {fileID: 8300000, guid: 698f533c049e9fc4eb60403bb6535dcd, type: 3}
+    volume: 0.5
+    pitch: 1
     spatialBlend: 0
     loop: 0
     audioSource: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    spatialBlend: 0
-    loop: 0
-    audioSource: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    spatialBlend: 0
-    loop: 0
-    audioSource: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    spatialBlend: 0
-    loop: 0
-    audioSource: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: Lancer_Tomate
+    clip: {fileID: 8300000, guid: 56099bff9b934394b899b7bbf487d712, type: 3}
+    volume: 0.5
+    pitch: 1
     spatialBlend: 0
     loop: 0
     audioSource: {fileID: 0}

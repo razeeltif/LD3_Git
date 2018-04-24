@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 114176772946877278}
   - component: {fileID: 114757392781913918}
   - component: {fileID: 136090829258593538}
+  - component: {fileID: 114552724895195520}
   m_Layer: 0
   m_Name: Leo
   m_TagString: Player
@@ -865,6 +866,7 @@ MonoBehaviour:
   namePlayer: 
   manette: {fileID: 0}
   anim: {fileID: 0}
+  lightAudioManager: {fileID: 0}
   delayAttacking: 2
 --- !u!114 &114461151781123928
 MonoBehaviour:
@@ -879,6 +881,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNumber: 0
   debug: 0
+--- !u!114 &114552724895195520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799604698158068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be459946754f3945aa78d4e5de9a69f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Eat_Leo
+    clip: {fileID: 8300000, guid: df10645c17c77294da825840d247fdbb, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Leo_Hit1
+    clip: {fileID: 8300000, guid: c5868839c50819e47a91d94ad9d2ecd5, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Leo_Safe1
+    clip: {fileID: 8300000, guid: 19fb04489d03a054da928e652c8c5d1a, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Leo_Stun
+    clip: {fileID: 8300000, guid: c11830c07f98da14c9bbab105a388d7f, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Lancer_Assiette
+    clip: {fileID: 8300000, guid: c4daee95aee2eee4488222c279c774d9, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Assiette_Break
+    clip: {fileID: 8300000, guid: 698f533c049e9fc4eb60403bb6535dcd, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    audioSource: {fileID: 0}
+  - name: Lancer_Tomate
+    clip: {fileID: 8300000, guid: 56099bff9b934394b899b7bbf487d712, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    audioSource: {fileID: 0}
 --- !u!114 &114757392781913918
 MonoBehaviour:
   m_ObjectHideFlags: 1
