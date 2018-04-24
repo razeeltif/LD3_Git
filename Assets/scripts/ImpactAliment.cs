@@ -33,6 +33,7 @@ public class ImpactAliment : MonoBehaviour {
 		if(other.gameObject.tag == "Player"){
 			other.gameObject.GetComponent<Player>().takeDamage(damage);
 			Destroy(this.gameObject);
+			Debug.Log("JAI MAL §§§§§§§§");
 		}
 	}
 }
