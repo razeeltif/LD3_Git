@@ -53,7 +53,7 @@ public class PrepareVegetables : MonoBehaviour {
     {
         //Si on a appuyé sur la touche demandée, on augmente notre compteur "inputEntered" de 1
         //Si on atteint le "nbPressInput" demandé, alors le mini-jeu est gagné
-        if (Input.GetButtonDown(inputToEnter))
+        if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false && Input.GetButtonDown(inputToEnter))
         {
             inputEntered ++;
             //A la moitié du jeu, on met le légume à moitié coupé

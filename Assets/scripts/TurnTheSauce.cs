@@ -90,19 +90,19 @@ public class TurnTheSauce : MonoBehaviour {
         //Donc tant qu'on a pas entré l'input précédent, on peut pas continuer (ça peut être amélioré)
         //Dans l'idée, une fois qu'on a fait un tour de joystick, on a notre compteur "inputEntered" qui augmente de 1
         //Quand "inputEntered" est égal à "nbInput", alors c'est gagné
-	    if(Input.GetAxis(AxisX) >= accuracy && !input2Entered && !input3Entered && !input4Entered)
+	    if(StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false &&  Input.GetAxis(AxisX) >= accuracy && !input2Entered && !input3Entered && !input4Entered)
         {
             input1Entered = true;
         }
-        if (Input.GetAxis(AxisY) >= accuracy && input1Entered && !input3Entered && !input4Entered)
+        if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false &&  Input.GetAxis(AxisY) >= accuracy && input1Entered && !input3Entered && !input4Entered)
         {
             input2Entered = true;
         }
-        if (Input.GetAxis(AxisX) <= -accuracy && input1Entered && input2Entered && !input4Entered)
+        if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false &&  Input.GetAxis(AxisX) <= -accuracy && input1Entered && input2Entered && !input4Entered)
         {
             input3Entered = true;
         }
-        if (Input.GetAxis(AxisY) <= -accuracy && input1Entered && input2Entered && input3Entered)
+        if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false &&  Input.GetAxis(AxisY) <= -accuracy && input1Entered && input2Entered && input3Entered)
         {
             inputEntered++;
             input1Entered = false;
@@ -112,7 +112,7 @@ public class TurnTheSauce : MonoBehaviour {
             if (inputEntered == nbInput)
             {
                 //il faudra surement changer cela
-                message.text = "LA SAUCE !";
+                message.text = "SAUCE !";
                 //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé
                 enabled = false;
                 player.setStateWaiting();

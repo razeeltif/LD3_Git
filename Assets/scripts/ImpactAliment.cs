@@ -8,7 +8,9 @@ public class ImpactAliment : MonoBehaviour {
 	public int damage = 10;
 
 	public float thrust;
+
 	Rigidbody rb;
+	
 	public float timeThrust;
 
 	private float actualTime;
@@ -26,15 +28,10 @@ public class ImpactAliment : MonoBehaviour {
 			}
 	}
 
-	/// <summary>
-	/// OnTriggerEnter is called when the Collider other enters the trigger.
-	/// </summary>
-	/// <param name="other">The other Collider involved in this collision.</param>
 	void OnTriggerEnter(Collider other)
 	{
 		if(other.gameObject.tag == "Player"){
-			Debug.Log("il a pris cher");
-			//other.gameObject.GetComponent<Player>().TakeDamage(damage);
+			other.gameObject.GetComponent<Player>().takeDamage(damage);
 			Destroy(this.gameObject);
 		}
 	}

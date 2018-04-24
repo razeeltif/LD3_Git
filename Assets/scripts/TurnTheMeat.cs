@@ -70,7 +70,7 @@ public class TurnTheMeat : MonoBehaviour {
         {
             image.rectTransform.sizeDelta = new Vector2(image.rectTransform.sizeDelta.x + Time.deltaTime * animationSpeed, image.rectTransform.sizeDelta.y + Time.deltaTime * animationSpeed);
         }
-        if (Input.GetButtonDown(inputToEnter1) && !input2Entered)
+        if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false && Input.GetButtonDown(inputToEnter1) && !input2Entered)
         {
             animationImage();
             image.sprite = ImageButtonToEnterRB;
@@ -79,7 +79,7 @@ public class TurnTheMeat : MonoBehaviour {
         }
 
         //Si on presse "inputToEnter2" et que "inputToEnter1" n'est pas déjà pressé, on passe "input1Entered" à true
-        if (Input.GetButtonDown(inputToEnter2) && !input1Entered)
+        if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false && Input.GetButtonDown(inputToEnter2) && !input1Entered)
         {
             animationImage();
             image.sprite = ImageButtonToEnterLB;
@@ -90,7 +90,7 @@ public class TurnTheMeat : MonoBehaviour {
         //Si on presse "inputToEnter1" et que "inputToEnter2" à déjà été pressé, on incrémente "inputEnter" de 1
         //et on repasse "input1Entered" et "input2Entered" à false
         //si "inputEnter" est égal à "nbInput", le minijeu est gagné 
-        if ((Input.GetButtonDown(inputToEnter1) && input2Entered) || (Input.GetButtonDown(inputToEnter2) && input1Entered))
+        if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false && ((Input.GetButtonDown(inputToEnter1) && input2Entered) || (Input.GetButtonDown(inputToEnter2) && input1Entered)))
         {
             animationImage();
             image.sprite = ImageButtonToEnterLB;
@@ -100,7 +100,7 @@ public class TurnTheMeat : MonoBehaviour {
             if (inputEnter == nbInput)
             {
                 //il faudra surement changer cela
-                message.text = "LA VIANDE !";
+                message.text = "MEAT !";
                 RawMeat.SetActive(false);
                 CookedMeat.SetActive(true);
                 //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé

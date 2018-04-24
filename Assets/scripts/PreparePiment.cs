@@ -77,7 +77,7 @@ public class PreparePiment : MonoBehaviour {
 
         //Quand on entre le bon input, le compteur "inputEnter" augmente de 1
         //Lorsqu'il atteint la valeur de "nbInput", le minijeu est gagné
-        if (Input.GetButtonDown(inputsToEnter[actualIndex]))
+        if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false &&  Input.GetButtonDown(inputsToEnter[actualIndex]))
         {
             animationImage();
             changeIndex();
@@ -90,7 +90,7 @@ public class PreparePiment : MonoBehaviour {
             if(inputEntered == nbInput)
             {
                 //Il faut surement changer cette partie de code
-                message.text = "PIMENTS !";
+                message.text = "PEPPER !";
                 ChilliPepperHalfCut.SetActive(false);
                 ChilliPepperCut.SetActive(true);
                 //Pour fonctionner avec le script LaunchMiniGame, on désactive le gameObject une fois le minijeu terminé

@@ -57,7 +57,7 @@ public class MiniGameManager : MonoBehaviour {
             if (!recipeManager._isRecipeEnd) {
                 //Si on appuie sur "inputLauncherMeat", on active le GameObject "objectActivateMeat"
                 //Et le GameObject activé permet de lancer son script de jeu
-                if (Input.GetButtonDown(recipeManager.inputLauncherMeat)) {
+                if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false && Input.GetButtonDown(recipeManager.inputLauncherMeat)) {
                     if (recipeManager.CheckIngredient(recipeManager.inputLauncherMeat)) {
                         player.setStatePlaying();
                         disableAllMiniGame();
@@ -66,7 +66,7 @@ public class MiniGameManager : MonoBehaviour {
                 }
                 //Si on appuie sur "inputLauncherVegetables", on active le GameObject "objectActivateVegetable"
                 //Et le GameObject activé permet de lancer son script de jeu
-                if (Input.GetButtonDown(recipeManager.inputLauncherVegetables)) {
+                if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false && Input.GetButtonDown(recipeManager.inputLauncherVegetables)) {
                     if (recipeManager.CheckIngredient(recipeManager.inputLauncherVegetables)) {
                         player.setStatePlaying();
                         disableAllMiniGame();
@@ -75,7 +75,7 @@ public class MiniGameManager : MonoBehaviour {
                 }
                 //Si on appuie sur "inputLauncherPiment", on active le GameObject "objectActivatePiment"
                 //Et le GameObject activé permet de lancer son script de jeu
-                if (Input.GetButtonDown(recipeManager.inputLauncherPiment)) {
+                if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false &&Input.GetButtonDown(recipeManager.inputLauncherPiment)) {
                     if (recipeManager.CheckIngredient(recipeManager.inputLauncherPiment)) {
                         player.setStatePlaying();
                         disableAllMiniGame();
@@ -84,7 +84,7 @@ public class MiniGameManager : MonoBehaviour {
                 }
                 //Si on appuie sur "inputLauncherSauce", on active le GameObject "objectActivateSauce"
                 //Et le GameObject activé permet de lancer son script de jeu
-                if (Input.GetButtonDown(recipeManager.inputLauncherSauce)) {
+                if (StartOptions.inMainMenuStatic == false && Pause.isPausedStatic == false && Input.GetButtonDown(recipeManager.inputLauncherSauce)) {
                     if (recipeManager.CheckIngredient(recipeManager.inputLauncherSauce)) {
                         player.setStatePlaying();
                         disableAllMiniGame();

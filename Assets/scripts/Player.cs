@@ -95,11 +95,11 @@ public class Player : MonoBehaviour {
 		if(damage == 5){
             anim.Play(namePlayer+"|Action_LancerTomate");
             lightAudioManager.Play("Lancer_Tomate");
-            Debug.Log("GRENADE !");
+            LancementBouffe.getInstance().lancerGrenade(playerNumber);
 		}else if( damage == 10){
             anim.Play(namePlayer+"|Action_LancerAssiette");
             lightAudioManager.Play("Lancer_Assiette");
-            Debug.Log("ASSIETTE !");
+			LancementBouffe.getInstance().lancerAssiette(playerNumber);
 		}
 	}
 

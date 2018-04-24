@@ -36,17 +36,17 @@ public class LancementBouffe : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		/*if(Input.GetKeyDown(KeyCode.B)){
-			GameObject obj = Instantiate(assiettePrefab);
+		if(Input.GetKeyDown(KeyCode.A)){
+			GameObject obj = Instantiate(tomateFarciePrefab);
 			obj.transform.position = positionDeDepart1;
 			obj.transform.rotation = Quaternion.Euler(rotationObjet1);
 		}
 
-		if(Input.GetKeyDown(KeyCode.C)){
-			GameObject obj = Instantiate(assiettePrefab);
+		if(Input.GetKeyDown(KeyCode.Z)){
+			GameObject obj = Instantiate(tomateFarciePrefab);
 			obj.transform.position = positionDeDepart2;
 			obj.transform.rotation = Quaternion.Euler(rotationObjet2);
-		}*/
+		}
 	}
 
 	public void  lancerAssiette(int playerNumber){
@@ -58,8 +58,27 @@ public class LancementBouffe : MonoBehaviour {
 			GameObject obj = Instantiate(assiettePrefab);
 			obj.transform.position = positionDeDepart2;
 			obj.transform.rotation = Quaternion.Euler(rotationObjet2);			
+		}else{
+			Debug.LogError("ERREUR : le numero du joueur n'est pas valide");
 		}
 	}
 
+	public void  lancerGrenade(int playerNumber){
+		if(playerNumber == 1){
+			GameObject obj = Instantiate(tomateFarciePrefab);
+			obj.transform.position = positionDeDepart1;
+			obj.transform.rotation = Quaternion.Euler(rotationObjet1);			
+		}else if(playerNumber == 2){
+			GameObject obj = Instantiate(tomateFarciePrefab);
+			obj.transform.position = positionDeDepart2;
+			obj.transform.rotation = Quaternion.Euler(rotationObjet2);			
+		}else{
+			Debug.LogError("ERREUR : le numero du joueur n'est pas valide");
+		}
+	}
+
+	public static LancementBouffe getInstance(){
+		return instance;
+	}
 
 }
