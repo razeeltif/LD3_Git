@@ -8,9 +8,10 @@ public class GameManager : MonoBehaviour {
 
     public GameObject EndScreen;
     public Text textEnd;
+    public LightAudioManager lightAudioManager;
 
-	// instance du gameManager
-	private static GameManager instance;
+    // instance du gameManager
+    private static GameManager instance;
 
 	void Awake()
 	{
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour {
 
 
 	public void Death(Player player){
+        lightAudioManager.Play("Combat_End");
         EndScreen.SetActive(true);
         textEnd.text = "Player" + player.playerNumber + " is defeated";
 
