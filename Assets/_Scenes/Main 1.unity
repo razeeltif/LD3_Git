@@ -2215,6 +2215,11 @@ Prefab:
       propertyPath: VegetableCut
       value: 
       objectReference: {fileID: 515088725}
+    - target: {fileID: 114901024493155782, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: puissance
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 844a2462f0e4cd34ea1ecb559991ae0f, type: 2}
   m_IsPrefabParent: 0
@@ -2939,6 +2944,11 @@ Prefab:
       propertyPath: soupiere
       value: 
       objectReference: {fileID: 1281429930}
+    - target: {fileID: 114040772470304988, guid: 0daf47965e4223a4f8987e8d05f1b083,
+        type: 2}
+      propertyPath: puissance
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0daf47965e4223a4f8987e8d05f1b083, type: 2}
   m_IsPrefabParent: 0
