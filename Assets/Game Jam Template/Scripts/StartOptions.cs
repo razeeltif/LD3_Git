@@ -41,14 +41,14 @@ public class StartOptions : MonoBehaviour {
 		//To change fade time, change length of animation "FadeToColor"
 		if (changeMusicOnStart) 
 		{
-			playMusic.FadeDown(fadeColorAnimationClip.length);
+			Invoke("playMusic.FadeDown(fadeColorAnimationClip.length)", 1);
 		}
 
 		//If changeScenes is true, start fading and change scenes halfway through animation when screen is blocked by FadeImage
 		if (changeScenes) 
 		{
 			//Use invoke to delay calling of LoadDelayed by half the length of fadeColorAnimationClip
-			Invoke ("LoadDelayed", fadeColorAnimationClip.length * .5f);
+			Invoke ("LoadDelayed", fadeColorAnimationClip.length * .2f);
 
 			//Set the trigger of Animator animColorFade to start transition to the FadeToOpaque state.
 			animColorFade.SetTrigger ("fade");
@@ -57,8 +57,8 @@ public class StartOptions : MonoBehaviour {
 		//If changeScenes is false, call StartGameInScene
 		else 
 		{
-			//Call the StartGameInScene function to start game without loading a new scene.
-			StartGameInScene();
+            //Call the StartGameInScene function to start game without loading a new scene.
+            StartGameInScene();
 		}
 
 	}

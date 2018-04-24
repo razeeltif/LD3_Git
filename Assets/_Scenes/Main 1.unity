@@ -712,24 +712,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &372027718 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1799604698158068, guid: 0daf47965e4223a4f8987e8d05f1b083,
-    type: 2}
-  m_PrefabInternal: {fileID: 1476947738}
---- !u!136 &372027719
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 372027718}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 2.18
-  m_Height: 9.48
-  m_Direction: 1
-  m_Center: {x: -5.33, y: 3.32, z: -1.14}
 --- !u!1001 &405349832
 Prefab:
   m_ObjectHideFlags: 0
@@ -1612,6 +1594,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11446616, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 22439792, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1702,19 +1688,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22496010, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 195.26456
+      value: 52.7069
       objectReference: {fileID: 0}
     - target: {fileID: 22496010, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -16.814318
       objectReference: {fileID: 0}
     - target: {fileID: 22496010, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 390.5291
+      value: 105.4138
       objectReference: {fileID: 0}
     - target: {fileID: 22496010, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 33.628635
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1726,19 +1712,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 195.26456
+      value: 52.7069
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -52.442955
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 390.5291
+      value: 105.4138
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 33.628635
       objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1750,19 +1736,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 195.26456
+      value: 52.7069
       objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -88.07159
       objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 390.5291
+      value: 105.4138
       objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 33.628635
       objectReference: {fileID: 0}
     - target: {fileID: 22461148, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -1856,6 +1842,30 @@ Prefab:
       propertyPath: hurt3Music
       value: 
       objectReference: {fileID: 8300000, guid: acd3bdd8da8dbeb45894ea6865314722, type: 3}
+    - target: {fileID: 11446616, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446616, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446616, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1016163365}
+    - target: {fileID: 11446616, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446616, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446616, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: fcbf9983ae0d12b41a34793106a3ea64, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
   m_IsPrefabParent: 0
@@ -2027,24 +2037,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2112927467}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
---- !u!1 &849728386 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1697433652811534, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
-    type: 2}
-  m_PrefabInternal: {fileID: 937109372}
---- !u!136 &849728387
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 849728386}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 2.18
-  m_Height: 9.48
-  m_Direction: 1
-  m_Center: {x: 0.06, y: 3.32, z: -1.14}
 --- !u!1001 &880185975
 Prefab:
   m_ObjectHideFlags: 0
@@ -2138,36 +2130,31 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1697433652811534, guid: 844a2462f0e4cd34ea1ecb559991ae0f, type: 2}
-      propertyPath: m_Name
-      value: Gus
-      objectReference: {fileID: 0}
-    - target: {fileID: 4098641726910222, guid: 844a2462f0e4cd34ea1ecb559991ae0f, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4098641726910222, guid: 844a2462f0e4cd34ea1ecb559991ae0f, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4098641726910222, guid: 844a2462f0e4cd34ea1ecb559991ae0f, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4098641726910222, guid: 844a2462f0e4cd34ea1ecb559991ae0f, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 77
-      objectReference: {fileID: 0}
-    - target: {fileID: 114041857385303156, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
-        type: 2}
-      propertyPath: delayAttacking
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 114901024493155782, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
         type: 2}
       propertyPath: message
       value: 
       objectReference: {fileID: 1582952850}
+    - target: {fileID: 114901024493155782, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: louche
+      value: 
+      objectReference: {fileID: 719006639}
+    - target: {fileID: 114901024493155782, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: soupiere
+      value: 
+      objectReference: {fileID: 523259629}
+    - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: message
+      value: 
+      objectReference: {fileID: 1582952850}
+    - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 1609085265}
     - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
         type: 2}
       propertyPath: RawMeat
@@ -2178,21 +2165,16 @@ Prefab:
       propertyPath: CookedMeat
       value: 
       objectReference: {fileID: 1624329650}
-    - target: {fileID: 114158672615419068, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+    - target: {fileID: 114299749970492846, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
         type: 2}
-      propertyPath: VegetableUnCut
+      propertyPath: message
       value: 
-      objectReference: {fileID: 515088727}
-    - target: {fileID: 114158672615419068, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+      objectReference: {fileID: 1582952850}
+    - target: {fileID: 114299749970492846, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
         type: 2}
-      propertyPath: VegetableHalfCut
+      propertyPath: image
       value: 
-      objectReference: {fileID: 515088726}
-    - target: {fileID: 114158672615419068, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
-        type: 2}
-      propertyPath: VegetableCut
-      value: 
-      objectReference: {fileID: 515088725}
+      objectReference: {fileID: 1609085265}
     - target: {fileID: 114299749970492846, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
         type: 2}
       propertyPath: ChilliPepperUncut
@@ -2208,36 +2190,6 @@ Prefab:
       propertyPath: ChilliPepperCut
       value: 
       objectReference: {fileID: 2041008540}
-    - target: {fileID: 114901024493155782, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
-        type: 2}
-      propertyPath: louche
-      value: 
-      objectReference: {fileID: 719006639}
-    - target: {fileID: 114901024493155782, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
-        type: 2}
-      propertyPath: soupiere
-      value: 
-      objectReference: {fileID: 523259629}
-    - target: {fileID: 114299749970492846, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
-        type: 2}
-      propertyPath: message
-      value: 
-      objectReference: {fileID: 1582952850}
-    - target: {fileID: 114299749970492846, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
-        type: 2}
-      propertyPath: image
-      value: 
-      objectReference: {fileID: 1609085265}
-    - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
-        type: 2}
-      propertyPath: message
-      value: 
-      objectReference: {fileID: 1582952850}
-    - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
-        type: 2}
-      propertyPath: image
-      value: 
-      objectReference: {fileID: 1609085265}
     - target: {fileID: 114158672615419068, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
         type: 2}
       propertyPath: message
@@ -2248,11 +2200,21 @@ Prefab:
       propertyPath: image
       value: 
       objectReference: {fileID: 1609085265}
-    - target: {fileID: 95255541320471638, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+    - target: {fileID: 114158672615419068, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
         type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: VegetableUnCut
+      value: 
+      objectReference: {fileID: 515088727}
+    - target: {fileID: 114158672615419068, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: VegetableHalfCut
+      value: 
+      objectReference: {fileID: 515088726}
+    - target: {fileID: 114158672615419068, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: VegetableCut
+      value: 
+      objectReference: {fileID: 515088725}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 844a2462f0e4cd34ea1ecb559991ae0f, type: 2}
   m_IsPrefabParent: 0
@@ -2462,7 +2424,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24301952, guid: 0ac7fb39e445048d89688f69c2a1839a,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: a9f55cfbc96a5594aaba94b0023ace30, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fcbf9983ae0d12b41a34793106a3ea64, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2470,7 +2432,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 126
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -2892,41 +2854,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1799604698158068, guid: 0daf47965e4223a4f8987e8d05f1b083, type: 2}
-      propertyPath: m_Name
-      value: Leo
-      objectReference: {fileID: 0}
-    - target: {fileID: 4061907202848124, guid: 0daf47965e4223a4f8987e8d05f1b083, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4061907202848124, guid: 0daf47965e4223a4f8987e8d05f1b083, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4061907202848124, guid: 0daf47965e4223a4f8987e8d05f1b083, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4061907202848124, guid: 0daf47965e4223a4f8987e8d05f1b083, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -77
-      objectReference: {fileID: 0}
-    - target: {fileID: 114360650425568584, guid: 0daf47965e4223a4f8987e8d05f1b083,
-        type: 2}
-      propertyPath: playerNumber
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114360650425568584, guid: 0daf47965e4223a4f8987e8d05f1b083,
-        type: 2}
-      propertyPath: delayAttacking
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114040772470304988, guid: 0daf47965e4223a4f8987e8d05f1b083,
-        type: 2}
-      propertyPath: message
-      value: 
-      objectReference: {fileID: 840006327}
     - target: {fileID: 114757392781913918, guid: 0daf47965e4223a4f8987e8d05f1b083,
         type: 2}
       propertyPath: message
@@ -2952,30 +2879,16 @@ Prefab:
       propertyPath: ChilliPepperCut
       value: 
       objectReference: {fileID: 108084982}
-    - target: {fileID: 114757392781913918, guid: 0daf47965e4223a4f8987e8d05f1b083,
+    - target: {fileID: 114176772946877278, guid: 0daf47965e4223a4f8987e8d05f1b083,
         type: 2}
-      propertyPath: imagesButtonToEnter.Array.data[0]
+      propertyPath: message
       value: 
-      objectReference: {fileID: 21300000, guid: ff5b31e62abd6a740ba0a7302b8743fd,
-        type: 3}
-    - target: {fileID: 114757392781913918, guid: 0daf47965e4223a4f8987e8d05f1b083,
+      objectReference: {fileID: 840006327}
+    - target: {fileID: 114176772946877278, guid: 0daf47965e4223a4f8987e8d05f1b083,
         type: 2}
-      propertyPath: imagesButtonToEnter.Array.data[1]
+      propertyPath: image
       value: 
-      objectReference: {fileID: 21300000, guid: d62bea54ef76c2742b3dbe2b76dfeebb,
-        type: 3}
-    - target: {fileID: 114757392781913918, guid: 0daf47965e4223a4f8987e8d05f1b083,
-        type: 2}
-      propertyPath: imagesButtonToEnter.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: 5c0b09588457fd54487a9a78c0cca5b4,
-        type: 3}
-    - target: {fileID: 114757392781913918, guid: 0daf47965e4223a4f8987e8d05f1b083,
-        type: 2}
-      propertyPath: imagesButtonToEnter.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: 5b0c05557921e764bbe2bbbfce4668a9,
-        type: 3}
+      objectReference: {fileID: 644242523}
     - target: {fileID: 114176772946877278, guid: 0daf47965e4223a4f8987e8d05f1b083,
         type: 2}
       propertyPath: VegetableUnCut
@@ -2991,12 +2904,12 @@ Prefab:
       propertyPath: VegetableCut
       value: 
       objectReference: {fileID: 1153177640}
-    - target: {fileID: 114176772946877278, guid: 0daf47965e4223a4f8987e8d05f1b083,
+    - target: {fileID: 114075449339241762, guid: 0daf47965e4223a4f8987e8d05f1b083,
         type: 2}
       propertyPath: message
       value: 
       objectReference: {fileID: 840006327}
-    - target: {fileID: 114176772946877278, guid: 0daf47965e4223a4f8987e8d05f1b083,
+    - target: {fileID: 114075449339241762, guid: 0daf47965e4223a4f8987e8d05f1b083,
         type: 2}
       propertyPath: image
       value: 
@@ -3011,16 +2924,11 @@ Prefab:
       propertyPath: CookedMeat
       value: 
       objectReference: {fileID: 248918562}
-    - target: {fileID: 114075449339241762, guid: 0daf47965e4223a4f8987e8d05f1b083,
+    - target: {fileID: 114040772470304988, guid: 0daf47965e4223a4f8987e8d05f1b083,
         type: 2}
       propertyPath: message
       value: 
       objectReference: {fileID: 840006327}
-    - target: {fileID: 114075449339241762, guid: 0daf47965e4223a4f8987e8d05f1b083,
-        type: 2}
-      propertyPath: image
-      value: 
-      objectReference: {fileID: 644242523}
     - target: {fileID: 114040772470304988, guid: 0daf47965e4223a4f8987e8d05f1b083,
         type: 2}
       propertyPath: louche
@@ -3031,11 +2939,6 @@ Prefab:
       propertyPath: soupiere
       value: 
       objectReference: {fileID: 1281429930}
-    - target: {fileID: 95952336718878952, guid: 0daf47965e4223a4f8987e8d05f1b083,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0daf47965e4223a4f8987e8d05f1b083, type: 2}
   m_IsPrefabParent: 0

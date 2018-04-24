@@ -300,9 +300,10 @@ GameObject:
   - component: {fileID: 114075449339241762}
   - component: {fileID: 114176772946877278}
   - component: {fileID: 114757392781913918}
+  - component: {fileID: 136090829258593538}
   m_Layer: 0
   m_Name: Leo
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -456,15 +457,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1799604698158068}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.6225146, z: 0, w: 0.7826082}
+  m_LocalPosition: {x: 28.25, y: 0, z: 32.86}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4351754317507994}
   - {fileID: 4837977830642418}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -77, z: 0}
 --- !u!4 &4102074447070766
 Transform:
   m_ObjectHideFlags: 1
@@ -754,7 +755,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1799604698158068}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 449bf7a549cf81e4ebf82bb02de716e2, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 1
@@ -824,6 +825,11 @@ MonoBehaviour:
   inputToEnter2: JoyLB2
   RawMeat: {fileID: 0}
   CookedMeat: {fileID: 0}
+  ImageButtonToEnterRB: {fileID: 0}
+  ImageButtonToEnterLB: {fileID: 0}
+  minSize: 0
+  maxSize: 0
+  animationSpeed: 0
 --- !u!114 &114176772946877278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -853,13 +859,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03274bfe1fa67e946b140c390f462a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 0
+  playerNumber: 2
   pv: 50
   state: 0
   namePlayer: 
   manette: {fileID: 0}
   anim: {fileID: 0}
-  delayAttacking: 0
+  delayAttacking: 2
 --- !u!114 &114461151781123928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -891,10 +897,10 @@ MonoBehaviour:
   animationSpeed: 400
   nbInput: 10
   imagesButtonToEnter:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: ff5b31e62abd6a740ba0a7302b8743fd, type: 3}
+  - {fileID: 21300000, guid: d62bea54ef76c2742b3dbe2b76dfeebb, type: 3}
+  - {fileID: 21300000, guid: 5c0b09588457fd54487a9a78c0cca5b4, type: 3}
+  - {fileID: 21300000, guid: 5b0c05557921e764bbe2bbbfce4668a9, type: 3}
   inputsToEnter:
   - JoyA2
   - JoyB2
@@ -932,6 +938,19 @@ MonoBehaviour:
   actualRecipe: []
   _isRecipeEnd: 0
   _numFinishedRecipe: -1
+--- !u!136 &136090829258593538
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799604698158068}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.18
+  m_Height: 9.48
+  m_Direction: 1
+  m_Center: {x: -5.33, y: 3.32, z: -1.14}
 --- !u!137 &137919926468573886
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
