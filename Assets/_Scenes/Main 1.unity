@@ -2220,6 +2220,33 @@ Prefab:
       propertyPath: puissance
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: ImageButtonToEnterRB
+      value: 
+      objectReference: {fileID: 21300000, guid: 01b98b7b73a42704fbac89d094b339a7,
+        type: 3}
+    - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: ImageButtonToEnterLB
+      value: 
+      objectReference: {fileID: 21300000, guid: fa36a7dc2919d3a42b97dbc204365e5f,
+        type: 3}
+    - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: minSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: maxSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114733878146040342, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: animationSpeed
+      value: 400
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 844a2462f0e4cd34ea1ecb559991ae0f, type: 2}
   m_IsPrefabParent: 0
@@ -2948,6 +2975,33 @@ Prefab:
         type: 2}
       propertyPath: puissance
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075449339241762, guid: 0daf47965e4223a4f8987e8d05f1b083,
+        type: 2}
+      propertyPath: ImageButtonToEnterRB
+      value: 
+      objectReference: {fileID: 21300000, guid: 01b98b7b73a42704fbac89d094b339a7,
+        type: 3}
+    - target: {fileID: 114075449339241762, guid: 0daf47965e4223a4f8987e8d05f1b083,
+        type: 2}
+      propertyPath: ImageButtonToEnterLB
+      value: 
+      objectReference: {fileID: 21300000, guid: fa36a7dc2919d3a42b97dbc204365e5f,
+        type: 3}
+    - target: {fileID: 114075449339241762, guid: 0daf47965e4223a4f8987e8d05f1b083,
+        type: 2}
+      propertyPath: minSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075449339241762, guid: 0daf47965e4223a4f8987e8d05f1b083,
+        type: 2}
+      propertyPath: maxSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075449339241762, guid: 0daf47965e4223a4f8987e8d05f1b083,
+        type: 2}
+      propertyPath: animationSpeed
+      value: 400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0daf47965e4223a4f8987e8d05f1b083, type: 2}
