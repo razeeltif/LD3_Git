@@ -805,7 +805,7 @@ MonoBehaviour:
   namePlayer: 
   manette: {fileID: 0}
   anim: {fileID: 0}
-  lightAudioManager: {fileID: 0}
+  lightAudioManager: {fileID: 114055250543988512}
   delayAttacking: 2
 --- !u!114 &114055250543988512
 MonoBehaviour:

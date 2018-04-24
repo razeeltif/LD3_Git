@@ -2215,9 +2215,20 @@ Prefab:
       propertyPath: VegetableCut
       value: 
       objectReference: {fileID: 515088725}
+    - target: {fileID: 114041857385303156, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+        type: 2}
+      propertyPath: lightAudioManager
+      value: 
+      objectReference: {fileID: 937109373}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 844a2462f0e4cd34ea1ecb559991ae0f, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &937109373 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114055250543988512, guid: 844a2462f0e4cd34ea1ecb559991ae0f,
+    type: 2}
+  m_PrefabInternal: {fileID: 937109372}
+  m_Script: {fileID: 11500000, guid: 7be459946754f3945aa78d4e5de9a69f, type: 3}
 --- !u!1001 &956023116
 Prefab:
   m_ObjectHideFlags: 0
@@ -2939,9 +2950,20 @@ Prefab:
       propertyPath: soupiere
       value: 
       objectReference: {fileID: 1281429930}
+    - target: {fileID: 114360650425568584, guid: 0daf47965e4223a4f8987e8d05f1b083,
+        type: 2}
+      propertyPath: lightAudioManager
+      value: 
+      objectReference: {fileID: 1476947739}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0daf47965e4223a4f8987e8d05f1b083, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1476947739 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114552724895195520, guid: 0daf47965e4223a4f8987e8d05f1b083,
+    type: 2}
+  m_PrefabInternal: {fileID: 1476947738}
+  m_Script: {fileID: 11500000, guid: 7be459946754f3945aa78d4e5de9a69f, type: 3}
 --- !u!1 &1579176762
 GameObject:
   m_ObjectHideFlags: 0
